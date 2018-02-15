@@ -1,0 +1,183 @@
+.card {
+    $this: &;
+    background-image: $gr1;
+    color: $c1;
+    border-radius: .3rem;
+
+    &--empty {
+        min-height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 3rem;
+        background: $c1;
+        color: $c11;
+        font-size: 1.8rem;
+        box-shadow: $bs1;
+    }
+
+    &--standalone {
+        margin: auto !important;
+        float: none !important;
+        min-height: 24rem;
+        width: 52rem;
+        max-width: 100%;        
+    }
+
+    &--inactive {
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: .3rem;
+            background-color: $c6;
+            opacity: .75;
+            z-index: 1;
+        }
+    }
+
+    &__header {
+        padding: 2.4rem 3rem;
+        position: relative;
+        min-height: 9.6rem;
+        &__bg {
+            background-image: url(../img/code.jpg);
+            background-repeat: no-repeat;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border-top-left-radius: .3rem;
+            border-top-right-radius: .3rem;
+            opacity: .5;
+        }
+        &__top {
+            position: relative;
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
+        &__settings {
+            width: 1.6rem;
+            min-width: 1.6rem;
+            height: 1.6rem;
+            min-height: 1.6rem;
+            margin-left: 1rem;
+            background-image: url(../img/settings.svg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-indent: -99999px;
+        }
+        &__title {
+            margin-bottom: .25em;
+        }
+        &__subtitle {
+            color: $c4;
+            margin-bottom: 0;
+            font-weight: 400;
+            position: relative;
+        }
+        &__menu {
+            position: absolute;
+            z-index: 1;
+            right: 2rem;
+            top: 6rem;
+            transform: translateY(20px);
+            visibility: hidden;
+            opacity: 0;
+            transition: all .4s;
+            &--visible {
+                opacity: 1;
+                visibility: visible;
+                transform: translateY(0);
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                right: 1.25rem;
+                top: -5px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 5px 5px 5px;
+                border-color: transparent transparent $c1 transparent;
+            }
+        }
+    }
+    &__user-list {
+        margin-bottom: 1.7rem;
+    }
+    &__user-list-wrap {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    &__tag {
+        margin-left: auto;
+        z-index: 1;
+        cursor: pointer;
+    }
+    &__main {
+        padding: 1.7rem 3rem 2rem;        
+    }
+    
+    &__divider {
+        margin: 0;
+        border: none;
+        border-bottom: .1rem solid rgba($c1, .2);
+    }
+    &__stats {
+        margin-top: 2.5rem;
+        display: flex;
+        &__desc {
+            font-size: 1.3rem;
+            padding-right: 1em;
+        }
+        &__bar {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            &:after {
+                content: '';
+                height: .1rem;
+                background-color: rgba($c1, .4);
+                flex: 1;
+            }
+        }
+        &__percentage {
+            border-radius: 10rem;
+            border: 2px solid white;
+            position: relative;
+            &:before {
+                content: attr(data-percent);
+                position: absolute;
+                font-size: 1.2rem;
+                top: -2.25rem;
+                right: -1.5rem;
+            }
+        }
+    }
+
+    @media(min-width: $lg * 1em) {
+        // move contextual menu to the left except for every third card
+        &:not(:nth-child(3n+3)) {
+            #{$this}__header {
+                &__menu {
+                    right: 5rem;
+                    transform: translateY(20px) translateX(100%);
+                    &--visible {
+                        transform: translateY(0) translateX(100%);
+                    }
+                    &:before {
+                        right: auto;
+                        left: .75rem;
+                        top: -5px;                    
+                    }
+                }
+            }
+        }
+    }
+ }

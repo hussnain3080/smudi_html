@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smudi</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+</head>
+<body>
+
+<header class="header">
+    <div class="header__container container">
+
+        <div class="header__links">
+            <h1 class="header__logo"><a href="#">smudi</a></h1>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--active">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__user">
+
+            <a class="header__user__notice header__user__notice--show-num js_notifications-toggle" href="#"
+               data-number="4">
+                your notices
+            </a>
+
+            <a class="header__user__profile" href="#" id="js_user-menu-toggle">
+
+                <img class="header__user__img" src="img/arnold.png">
+                <div class="header__user__img header__user__img--empty">AS</div>
+                <span class="header__user__name">Arnold Schwarzeneger</span>
+
+                <div class="header__menu" id="js_user-menu">
+                    <h3 class="header__menu__heading">My profile</h3>
+                    <ul class="header__menu__nav">
+                        <li class="header__menu__nav-item"><a href="#" class="header__menu__nav-link">Project
+                            settings</a></li>
+                        <li class="header__menu__nav-item"><a href="#" class="header__menu__nav-link">Company
+                            settings</a></li>
+                    </ul>
+                    <a href="#" class="header__menu__logout">Logout</a>
+                </div>
+
+            </a>
+        </div>
+    </div>
+
+    <div class="header__notifications js_notifications">
+        <div class="notifications">
+            <ul class="notifications__list">
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 09:37</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>
+                            just invited you to a project <a href="#" class="notifications__link"><strong>Totall
+                                recall</strong></a></div>
+                        <div class="notifications__btns">
+                            <a class="btn-round notifications__btn">
+                                <span class="visually-hidden">accept</span>
+                                <svg width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4l3 3L10.5.7" stroke-width="2" fill="none" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+                            <a class="btn-round btn-round--decline notifications__btn">
+                                <span class="visually-hidden">decline</span>
+                                <svg width="9" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.4 9.4">
+                                    <path d="M9.4 1.4L8 0 4.7 3.3 1.4 0 0 1.4l3.3 3.3L0 8l1.4 1.4L4.7 6 8 9.5 9.4 8 6 4.7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 10:01</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>
+                            just finished a task <a href="#" class="notifications__link"><strong>Prepare design
+                                specs</strong></a></div>
+                    </div>
+                </li>
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 09:37</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>
+                            just invited you to a project <a href="#" class="notifications__link"><strong>Totall
+                                recall</strong></a></div>
+                        <div class="notifications__btns">
+                            <a class="btn-round notifications__btn">
+                                <span class="visually-hidden">accept</span>
+                                <svg width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg"><title>
+                                    Page 1</title>
+                                    <path d="M1 4l3 3L10.5.7" stroke-width="2" fill="none" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+                            <a class="btn-round btn-round--decline notifications__btn">
+                                <span class="visually-hidden">decline</span>
+                                <svg width="9" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.4 9.4">
+                                    <path d="M9.4 1.4L8 0 4.7 3.3 1.4 0 0 1.4l3.3 3.3L0 8l1.4 1.4L4.7 6 8 9.5 9.4 8 6 4.7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 10:01</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>
+                            just finished a task <a href="#" class="notifications__link"><strong>Prepare design
+                                specs</strong></a></div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="notifications__bottom-btn">
+                <a href="#" class="btn btn--dark-outline">Show all notifications</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>
+    <div class="container">
+
+        <section class="dashboard">
+            <ul class="dashboard__list clearfix">
+
+                <li class="dashboard__card card">
+                    <div class="card__header">
+                        <div class="card__header__menu context-menu js_context-menu">
+                            <ul class="context-menu__list">
+                                <li class="context-menu__item"><a href="#" class="context-menu__link">Project
+                                    settings</a></li>
+                                <li class="context-menu__item"><a href="#" class="context-menu__link">Leave project</a>
+                                </li>
+                                <li class="context-menu__item"><a href="#" class="context-menu__link">Archive
+                                    project</a></li>
+                                <li class="context-menu__item"><a href="#" class="context-menu__link">Delete project</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="card__header__bg"></div>
+                        <div class="card__header__top">
+                            <h2 class="card__header__title">Project total recall</h2>
+                            <a href="#" class="card__header__settings js_context-menu-toggle">settings</a>
+
+                        </div>
+                        <h3 class="card__header__subtitle">This is the description</h3>
+                    </div>
+                    <div class="card__main">
+                        <div class="card__user-list-wrap">
+
+                            <ul class="card__user-list user-list">
+                                <li class="user-list__item" data-name="Someone Else">
+                                    <a href="#" class="user-list__link"><img class="user-list__img"
+                                                                             src="img/arnold.png"></a>
+                                </li>
+                                <li class="user-list__item" data-name="Someone Else">
+                                    <a href="#" class="user-list__link"><img class="user-list__img"
+                                                                             src="img/silvester.jpg"></a>
+                                </li>
+                                <li class="user-list__item" data-name="Silvester Stallone">
+                                    <a href="#" class="user-list__link user-list__link--empty">AS</a>
+                                </li>
+                                <li class="user-list__item" data-name="Silvester Stallone">
+                                    <a href="#" class="user-list__link user-list__link--pending"><img
+                                            class="user-list__img" src="img/silvester.jpg"></a>
+                                </li>
+                                <li class="user-list__item user-list__item--add">
+                                    <a href="#" class="user-list__link user-list__link--add">
+                                        <svg class="user-list__plus" width="8" height="8" viewBox="0 0 8 8"
+                                             xmlns="http://www.w3.org/2000/svg">
+                                            <g stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                                                <path d="M4 1v6M7 4H1"/>
+                                            </g>
+                                        </svg>
+                                        <span class="visually-hidden">add user</span>
+                                    </a>
+                                </li>
+                                <li class="user-list__item user-list__item--more">
+                                    <a href="#" class="user-list__link ">8 more</a>
+                                    <ul class="user-list__hover">
+                                        <li>Arnold Schwarzeneger</li>
+                                        <li>Arnold Schwarzeneger</li>
+                                        <li>Arnold Schwarzeneger</li>
+                                        <li>Arnold Schwarzeneger</li>
+                                        <li>Arnold Schwarzeneger</li>
+                                        <li>Arnold Schwarzeneger</li>
+                                        <li>Arnold Schwarzeneger</li>
+                                        <li>Arnold Schwarzeneger</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class="card__divider">
+                        <div class="card__stats">
+                            <span class="card__stats__desc">Board health</span>
+                            <div class="card__stats__bar">
+                                <!-- style attribute and data attribute to be added dynamically -->
+                                <span class="card__stats__percentage" data-percent="75%" style="width: 75%"></span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <div class="modal" id="js_modal">
+
+            <section class="edit-task">
+                <a class="edit-task__close" href="#">close</a>
+                <div class="edit-task__header">
+
+                    <!-- default header-->
+                    <div class="edit-task__top" style="display: block">
+                        <div class="container edit-task__container edit-task__top__container">
+                            <!-- change class to change status img -->
+                            <!-- edit-task__top__status--poor -->
+                            <!-- edit-task__top__status--ok -->
+                            <!-- edit-task__top__status--great -->
+                            <div class="edit-task__top__status edit-task__top__status--ok">
+                                <div class="edit-task__top__status-wrap">
+                                    <div class="edit-task__top__label label">Task status:</div>
+                                    <div class="edit-task__top__title">Running</div>
+                                </div>
+                            </div>
+                            <div class="edit-task__top__estimate">
+                                <div class="edit-task__top__label edit-task__top__label--bold label">Estimated finish:
+                                </div>
+                                <div class="edit-task__top__title">24. 12. 2017 <span
+                                        class="edit-task__top__title--regular">at 10:00</span></div>
+                            </div>
+                            <div class="edit-task__top__dates">
+                                <div class="edit-task__top__label edit-task__top__label--white label">Best: 22. 12. 2017
+                                    / 13:30
+                                </div>
+                                <div class="edit-task__top__label edit-task__top__label--white label">Worst: 28. 12.
+                                    2017 / 22:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- time estimate header -->
+                    <div class="edit-task__top">
+                        <div class="container edit-task__container edit-task__top__container">
+                            <div class="edit-task__top__time-estimate">
+                                <div class="edit-task__top__time-estimate__label">
+                                    <svg class="edit-task__top__time-estimate__icon" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 20 20">
+                                        <path d="M10 20C4.5 20 0 15.5 0 10S4.5 0 10 0s10 4.5 10 10-4.5 10-10 10zm0-19c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9z"
+                                              opacity=".5" fill="#b6cccc"/>
+                                        <path d="M10.6 8.1h.6l-.9 4.7c0 .2 0 .3-.1.4s0 .2 0 .2c0 .3.1.5.2.6.1.1.3.2.5.2.1 0 .2 0 .4-.1s.4-.1.6-.2v.6c-.5.2-.9.3-1.3.4-.4.1-.8.1-1.1.1-.3 0-.6-.1-.8-.3s-.3-.3-.3-.7v-.3c0-.1.1-.3.1-.6l.8-3.8-1.1-.2v-.5l2.4-.5zm.3-3.3c.3 0 .5.1.7.2.2.2.3.4.3.7 0 .3-.1.5-.3.7-.2.2-.5.3-.8.3-.3 0-.5-.1-.7-.2s-.3-.3-.3-.6.1-.6.3-.8c.2-.2.4-.3.8-.3z"
+                                              fill="#fff"/>
+                                    </svg>
+                                    <div class="edit-task__top__time-estimate__icon-label edit-task__top__label label">
+                                        Enter your task estimate:
+                                    </div>
+                                </div>
+                                <div class="edit-task__top__time-estimate__inputs">
+                                    <input class="edit-task__top__time-estimate__input" type="number"
+                                           placeholder="Best case (h)">
+                                    <div class="edit-task__top__time-estimate__inputs-median">
+                                        <div class="edit-task__top__time-estimate__inputs-median-label">Median:</div>
+                                        <div class="edit-task__top__time-estimate__inputs-median-result">6</div>
+                                    </div>
+                                    <input class="edit-task__top__time-estimate__input" type="number"
+                                           placeholder="Worst case (h)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- task finished -->
+                    <div class="edit-task__top" style="display: block">
+                        <div class="container edit-task__container edit-task__top__container edit-task__top__container--centered">
+                            <div class="edit-task__top__estimate">
+                                <div class="edit-task__top__label edit-task__top__label--bold label">Finished!</div>
+                                <div class="edit-task__top__title"><span
+                                        class="edit-task__top__title--regular">completed in</span> 14 hours
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container edit-task__container">
+                        <div class="edit-task__header__title-wrap">
+                            <img class="edit-task__header__title-img" src="img/arnold.png">
+                            <h2 class="edit-task__header__title">This is a card with a longer name than usual</h2>
+                            <div class="edit-task__header__assign-wrap">
+                                <a class="btn-oval btn-oval--offset-right">
+                                    <svg class="btn-oval__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.5 15"
+                                         width="16.5">
+                                        <g transform="translate(-994 -240)">
+                                            <g transform="translate(320 63)">
+                                                <g>
+                                                    <g transform="translate(0 30)">
+                                                        <g transform="translate(35 140)">
+                                                            <g transform="translate(5)">
+                                                                <g transform="translate(619)">
+                                                                    <g>
+                                                                        <path
+                                                                                d="M12.3 14H12c-.8 0-1.6 0-2.4-.1-.6-.1-1.3-.2-2.1-.5-.3-.1-.7-.3-1-.6-.3-.4-.5-.8-.5-1.3v-.1-.5c.1-.4.3-.7.4-.9.4-.5 1-.9 1.4-1.1.6-.4 1.4-.7 2.2-1 .3-.3.3-.6.2-.9-.8-1.1-1.3-2.2-1.5-3.4-.1-1 0-1.8.3-2.6.5-1 1.3-1.7 2.5-1.9 1.2-.2 2.3 0 3.2.8.6.5 1 1.1 1.2 2 .2.9.1 1.9-.2 2.9-.3.8-.7 1.5-1.3 2.1-.1.3-.1.5 0 .7 0 .1.1.1.1.2 1 .3 1.8.7 2.5 1.2.5.3.8.6 1.1.9.4.4.5.9.5 1.4v.2c0 .2 0 .3-.1.5-.1.4-.4.7-.8 1-.5.3-1 .5-1.4.6-.6.2-1.2.3-1.9.3-.5 0-1 .1-1.5.1h-.6zm-2.5-1.1c.8.1 1.5.1 2.3.1h.8c.5 0 1 0 1.5-.1.6 0 1.1-.1 1.7-.3.5-.1.8-.3 1.1-.4.2-.1.3-.3.4-.4v-.5c0-.3-.1-.5-.3-.7-.2-.3-.5-.5-.9-.7-.7-.5-1.4-.9-2.4-1.2-.1 0-.3-.1-.4-.3-.1-.1-.2-.3-.3-.5-.2-.4-.2-.9 0-1.4 0-.1.1-.2.2-.4.5-.5.9-1.1 1.1-1.7.3-.9.4-1.6.2-2.4-.1-.6-.4-1-.8-1.4-.7-.5-1.4-.7-2.3-.6-.8.2-1.4.6-1.7 1.4-.3.6-.4 1.3-.3 2 .2 1.1.6 2 1.3 2.8.1.1.1.2.2.3.2.6.1 1.2-.3 1.8-.1.2-.3.3-.5.4-.8.3-1.4.6-2 .9-.4.3-.8.6-1.2 1-.1.1-.2.3-.2.4V11.6c0 .2.1.4.2.5.2.2.4.3.7.4.7.2 1.3.3 1.9.4zm.5-6zm-.1-.1zM3 9.5c-.3 0-.5-.2-.5-.5V7h-2C.2 7 0 6.8 0 6.5S.2 6 .5 6h2V4c0-.3.2-.5.5-.5s.5.2.5.5v2h2c.3 0 .5.2.5.5s-.2.5-.5.5h-2v2c0 .3-.2.5-.5.5z"
+                                                                                transform="translate(15 8)"/>
+                                                                    </g>
+                                                                </g>
+                                                            </g>
+                                                        </g>
+                                                    </g>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                    assign
+                                </a>
+                                <div class="dropdown__list dropdown__list--assign" style="display: none">
+                                    <div class="dropdown__item">
+                                        <label class="visually-hidden dropdown__input-label" for="add-new-label">Add new
+                                            label</label>
+                                        <input class="dropdown__input" type="text" id="add-new-label"
+                                               placeholder="Find a user">
+                                    </div>
+                                    <div class="dropdown__labels__title label">Your latest colaborators:</div>
+                                    <a href="#"
+                                       class="dropdown__link dropdown__link--centered dropdown__link--selected">
+                                        <img class="dropdown__user-img" src="img/arnold.png">
+                                        Arnold Schwarzenegger (me)
+                                    </a>
+                                    <a href="#" class="dropdown__link dropdown__link--centered">
+                                        <img class="dropdown__user-img" src="img/arnold.png">
+                                        Arnold Schwarzenegger
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="edit-task__header__desc-wrap">
+                            <textarea class="edit-task__header__desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aperiam consequatur delectus eos explicabo itaque iusto libero maxime molestias nam odio odit officia, omnis perferendis.</textarea>
+                            <ul class="edit-task__header__desc-rich-text rich-text-btns">
+                                <li class="rich-text-btns__item">
+                                    <button class="rich-text-btns__btn">
+                                        <svg class="rich-text-btns__icon rich-text-btns__icon--bold"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.1 9.8">
+                                            <path d="M6.8.7c.6.4.9 1 .9 1.8 0 .5-.2 1-.5 1.4-.2.3-.6.6-1.2.7.7.1 1.2.4 1.6.9.4.4.6 1 .6 1.6 0 .8-.3 1.5-1 2s-1.6.7-2.7.7H0V0h4.4c1 0 1.8.2 2.4.7zm-1.4 3c.3-.2.4-.5.4-.9s-.1-.7-.4-.9-.7-.3-1.1-.3H1.9V4h2.4c.4 0 .8-.1 1.1-.3zm.3 4.1c.3-.2.5-.6.5-1s-.2-.7-.5-.9c-.4-.2-.8-.3-1.4-.3H1.9v2.6h2.4c.6 0 1-.1 1.4-.4z"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="rich-text-btns__item">
+                                    <button class="rich-text-btns__btn">
+                                        <svg class="rich-text-btns__icon rich-text-btns__icon--italics"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 11">
+                                            <path d="M8 1V0H2v1h2.5l-2 9H0v1h6v-1H3.5l2.1-9z"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="rich-text-btns__item">
+                                    <button class="rich-text-btns__btn">
+                                        <svg class="rich-text-btns__icon rich-text-btns__icon--underscore"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 11.1">
+                                            <path
+                                                    d="M2.6 7.4c.5.5 1.1.7 1.9.7.8 0 1.4-.2 1.9-.7.5-.5.7-1.1.7-2V0h1.2v5.4c0 1.2-.3 2.1-1 2.8-.7.7-1.6 1-2.8 1-1.2 0-2.1-.3-2.8-1s-1-1.6-1-2.8V0h1.2v5.4c0 .8.2 1.5.7 2zM0 10.1h9v1H0z"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="rich-text-btns__item rich-text-btns__item--margin">
+                                    <button class="rich-text-btns__btn">
+                                        <svg class="rich-text-btns__icon rich-text-btns__icon--attachment"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13.5 13.5">
+                                            <path
+                                                    d="M10.253 8.838l-.707-.707 1.768-1.768c1.343-1.343 1.555-3.394.353-4.596s-3.253-.99-4.596.354L5.303 3.889l-.707-.708 1.768-1.767c1.768-1.768 4.455-1.91 6.01-.354s1.414 4.243-.353 6.01l-1.768 1.768zm-6.505 4.667c-.99 0-1.98-.424-2.687-1.131-1.556-1.556-1.415-4.243.353-6.01l1.768-1.768.707.707L2.121 7.07C.778 8.414.636 10.535 1.768 11.667c1.202 1.202 3.252.99 4.596-.354l1.768-1.768.707.708L7.07 12.02a5.127 5.127 0 0 1-3.323 1.485z"/>
+                                            <path d="M9.18 4.975L4.938 9.218 4.23 8.51l4.243-4.243z"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="rich-text-btns__item">
+                                    <button class="rich-text-btns__btn">
+                                        <svg class="rich-text-btns__icon rich-text-btns__icon--list"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.5 8">
+                                            <path class="st0" d="M5.5 6h9v1h-9z"/>
+                                            <circle class="st0" cx="1.5" cy="6.5" r="1.5"/>
+                                            <path class="st0" d="M5.5 1h9v1h-9z"/>
+                                            <circle class="st0" cx="1.5" cy="1.5" r="1.5"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="rich-text-btns__item rich-text-btns__item--margin">
+                                    <button class="rich-text-btns__btn">
+                                        <svg class="rich-text-btns__icon rich-text-btns__icon--numbered-list"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.2 10.2">
+                                            <path class="st0" d="M5.2 7.7h9v1h-9z"/>
+                                            <g>
+                                                <path
+                                                        d="M3.3 9.3v.9H.1v-.7l1.5-1.6c.1-.1.2-.2.3-.4s.1-.2.1-.3c0-.1 0-.2-.1-.3-.1-.1-.2-.1-.4-.1s-.4 0-.6.1-.4.2-.6.4l-.4-.8c.6-.4 1.2-.6 1.7-.6.3 0 .5 0 .8.1.2.1.4.2.5.4s.2.4.2.6c0 .2-.1.4-.2.7-.1.2-.3.5-.6.7l-.9.9h1.9z"/>
+                                            </g>
+                                            <path d="M5.2 1.7h9v1h-9z"/>
+                                            <g>
+                                                <path d="M.9 0h1.9v4.2H1.7V.9H.9V0z"/>
+                                            </g>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="rich-text-btns__item">
+                                    <button class="rich-text-btns__btn">
+                                        <svg class="rich-text-btns__icon rich-text-btns__icon--left"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 7">
+                                            <path d="M0 6h9v1H0zm0-3h5v1H0zm0-3h11v1H0z"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                                <li class="rich-text-btns__item">
+                                    <button class="rich-text-btns__btn">
+                                        <svg class="rich-text-btns__icon rich-text-btns__icon--right"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 7">
+                                            <path d="M11 6H2v1h9zm0-3H6v1h5zm0-3H0v1h11z"/>
+                                        </svg>
+                                    </button>
+                                </li>
+                            </ul>
+                            <div class="edit-task__header__desc-btns">
+                                <a href="#" class="btn btn--dark">Save</a>
+                                <a href="#" class="btn btn--decline">Discard</a>
+                            </div>
+                        </div>
+                        <div class="edit-task__header__tags">
+                            <ul class="edit-task__header__tags-list">
+                                <a class="edit-task__header__tag tag tag--large" href="#"><span
+                                        class="tag--plus">＋</span><span>Add label</span></a>
+                                <li class="edit-task__header__tag tag tag--large tag--label3">Label name</li>
+                                <li class="edit-task__header__tag tag tag--large">Label</li>
+                                <li class="edit-task__header__tag tag tag--large tag--label6">Label w/ medium name</li>
+                            </ul>
+                            <div class="edit-task__header__tags-dropdown dropdown__list dropdown__list--large-padding"
+                                 style="display: none">
+                                <div class="dropdown__item">
+                                    <label class="dropdown__input-label" for="add-new-label">Add new label</label>
+                                    <input class="dropdown__input" type="text" id="add-new-label"
+                                           placeholder="New label">
+                                </div>
+                                <div class="dropdown__labels">
+                                    <div class="dropdown__labels__title label">Add existing label:</div>
+                                    <a href="#" class="dropdown__labels__item">
+                                        <div class="dropdown__labels__item-inner">
+                                            <div class="dropdown__labels__color dropdown__labels__color--label1">
+                                                <span class="visually-hidden">change color</span>
+                                            </div>
+                                            <div>Duplicate</div>
+                                            <div class="dropdown__labels__delete">
+                                                <span class="visually-hidden">delete label</span>
+                                                <svg class="dropdown__labels__delete-icon"
+                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                    <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                          fill="#b6cccc"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown__labels__picker general-settings__picker__list">
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label0" id="label0">
+                                                <label for="label0"
+                                                       class="general-settings__picker__label general-settings__picker__label--label0"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label1" id="label1">
+                                                <label for="label1"
+                                                       class="general-settings__picker__label general-settings__picker__label--label1"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label2" id="label2">
+                                                <label for="label2"
+                                                       class="general-settings__picker__label general-settings__picker__label--label2"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label3" id="label3">
+                                                <label for="label3"
+                                                       class="general-settings__picker__label general-settings__picker__label--label3"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label4" id="label4">
+                                                <label for="label4"
+                                                       class="general-settings__picker__label general-settings__picker__label--label4"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label5" id="label5">
+                                                <label for="label5"
+                                                       class="general-settings__picker__label general-settings__picker__label--label5"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label6" id="label6">
+                                                <label for="label6"
+                                                       class="general-settings__picker__label general-settings__picker__label--label6"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label7" id="label7">
+                                                <label for="label7"
+                                                       class="general-settings__picker__label general-settings__picker__label--label7"></label>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                    <a href="#" class="dropdown__labels__item dropdown__labels__item--picker-active">
+                                        <div class="dropdown__labels__item-inner">
+                                            <div class="dropdown__labels__color dropdown__labels__color--label4">
+                                                <span class="visually-hidden">change color</span>
+                                            </div>
+                                            <div>Duplicate</div>
+                                            <div class="dropdown__labels__delete">
+                                                <span class="visually-hidden">delete label</span>
+                                                <svg class="dropdown__labels__delete-icon"
+                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                    <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                          fill="#b6cccc"/>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <ul class="dropdown__labels__picker general-settings__picker__list">
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label0" id="label0-2">
+                                                <label for="label0-2"
+                                                       class="general-settings__picker__label general-settings__picker__label--label0"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label1" id="label1-0">
+                                                <label for="label1-0"
+                                                       class="general-settings__picker__label general-settings__picker__label--label1"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label2" id="label2-0">
+                                                <label for="label2-0"
+                                                       class="general-settings__picker__label general-settings__picker__label--label2"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label3" id="label3-0">
+                                                <label for="label3-0"
+                                                       class="general-settings__picker__label general-settings__picker__label--label3"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label4" id="label4-2">
+                                                <label for="label4-2"
+                                                       class="general-settings__picker__label general-settings__picker__label--label4"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label5" id="label5-2">
+                                                <label for="label5-2"
+                                                       class="general-settings__picker__label general-settings__picker__label--label5"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label6" id="label6-2">
+                                                <label for="label6-2"
+                                                       class="general-settings__picker__label general-settings__picker__label--label6"></label>
+                                            </li>
+                                            <li class="general-settings__picker__item">
+                                                <input class="visually-hidden general-settings__picker__input"
+                                                       type="radio" name="colour" value="label7" id="label7-2">
+                                                <label for="label7-2"
+                                                       class="general-settings__picker__label general-settings__picker__label--label7"></label>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="edit-task__tabs modal-tabbed modal-tabbed--white">
+                    <div class="container edit-task__container">
+
+                        <div class="modal-tabbed__header">
+                            <a class="modal-tabbed__btn" role="tab" aria-selected="false" aria-controls="tab1-content"
+                               tabindex="0">
+                                <svg class="modal-tabbed__ico" width="20" height="20"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <g transform="translate(1 1)" stroke="#0D2C54" fill="none" fill-rule="evenodd">
+                                        <rect stroke-linecap="square" width="18" height="18" rx="3"/>
+                                        <path d="M5 8.8l3.4 3.4L14.6 6"/>
+                                    </g>
+                                </svg>
+                                <span id="tab1-description">Checklist (<span>4</span>)</span>
+                            </a>
+                            <a class="modal-tabbed__btn" role="tab" aria-selected="true" aria-controls="tab2-content"
+                               tabindex="0">
+                                <svg class="modal-tabbed__ico" width="18" height="20"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.2 5L5 12a1.8 1.8 0 0 0 2.6 2.6L15.4 7a3.7 3.7 0 0 0-5.2-5.2L2.4 9.5a5.5 5.5 0 1 0 7.8 7.8l5.2-5.2"
+                                          stroke="#0D2C54" fill="none" fill-rule="evenodd" opacity=".8"/>
+                                </svg>
+                                <span id="tab2-description">Attachments (<span>1</span>)</span>
+                            </a>
+                            <div class="dropdown__outer-wrap dropdown__outer-wrap--right">
+                                <a class="modal-tabbed__btn modal-tabbed__btn--dropdown" tabindex="0">
+                                    <span>Task actions</span>
+                                </a>
+                                <!-- change style dynamically   -->
+                                <ul class="dropdown__list dropdown__list--right" style="display: none">
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link dropdown__link--selected">
+                                            <div class="dropdown__icon-wrap">
+                                                <svg class="dropdown__icon dropdown__icon--duplicate"
+                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 20">
+                                                    <path d="M16.5 4H14V1.5c0-.8-.7-1.5-1.5-1.5h-11C.7 0 0 .7 0 1.5v13c0 .8.7 1.5 1.5 1.5H4v2.5c0 .8.7 1.5 1.5 1.5h11c.8 0 1.5-.7 1.5-1.5v-13c0-.8-.7-1.5-1.5-1.5zM1 14.5v-13c0-.3.2-.5.5-.5h11c.3 0 .5.2.5.5v13c0 .3-.2.5-.5.5h-11c-.3 0-.5-.2-.5-.5zm16 4c0 .3-.2.5-.5.5h-11c-.3 0-.5-.2-.5-.5V16h7.5c.8 0 1.5-.7 1.5-1.5V5h2.5c.3 0 .5.2.5.5v13z"/>
+                                                    <path d="M4 12h1v1H4zM4 10h1v1H4zM4 8h1v1H4zM4 6h1v1H4zM4 4h1v1H4zM6 4h1v1H6zM8 4h1v1H8zM10 4h1v1h-1z"/>
+                                                </svg>
+                                            </div>
+                                            Duplicate
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            <div class="dropdown__icon-wrap">
+                                                <svg class="dropdown__icon dropdown__icon--share"
+                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.1 18">
+                                                    <path d="M14.2 15.5c0 .8-.7 1.5-1.5 1.5H2.5c-.8 0-1.5-.7-1.5-1.5v-11C1 3.7 1.7 3 2.5 3h3.7V2H2.5C1.1 2 0 3.1 0 4.5v11C0 16.9 1.1 18 2.5 18h10.2c1.4 0 2.5-1.1 2.5-2.5v-4h-1v4z"/>
+                                                    <path d="M17.1.7V0h-6.2v1h4.5L4.9 12.2l.7.7L16.1 1.8v4.7h1V.7z"/>
+                                                </svg>
+                                            </div>
+                                            Share
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            <div class="dropdown__icon-wrap">
+                                                <svg class="dropdown__icon dropdown__icon--archive"
+                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.2 17.7">
+                                                    <path d="M16.8 17.7H3.4c-1.2 0-2.2-1-2.2-2.2V5h17.7v10.5c0 1.2-1 2.2-2.1 2.2zM2.3 6v9.5c0 .6.5 1.2 1.2 1.2h13.3c.6 0 1.2-.5 1.2-1.2V6H2.3zm17.9-1.7H0V1.5C0 .7.7 0 1.5 0h17.3c.8 0 1.5.7 1.5 1.5v2.8zM1 3.3h18.2V1.5c0-.3-.2-.5-.5-.5H1.5c-.3 0-.5.2-.5.5v1.8z"/>
+                                                    <path d="M6.8 8.3h6.7v1H6.8z"/>
+                                                </svg>
+                                            </div>
+                                            Archive
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            <div class="dropdown__icon-wrap">
+                                                <svg class="dropdown__icon dropdown__icon--print"
+                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.1 20.6">
+                                                    <path d="M19.7 5.5h-3.2V0h-12v5.5H1.4C.6 5.5 0 6.1 0 6.9v8.2c0 .8.6 1.4 1.4 1.4h3.2v4.1h12v-4.1h3.2c.8 0 1.4-.6 1.4-1.4V6.9c-.1-.8-.7-1.4-1.5-1.4zM5.6 1h10v4.5h-10V1zm9.9 18.6h-10v-7.2h10v7.2zm4.6-4.5c0 .2-.2.4-.4.4h-3.2v-4.1h-12v4.1H1.4c-.2 0-.4-.2-.4-.4V6.9c0-.2.2-.4.4-.4h18.4c.2 0 .4.2.4.4v8.2z"
+                                                          class="st0"/>
+                                                    <path d="M6.9 13.7h7.3v1H6.9zm0 1.8h5.5v1H6.9zm0 1.8h7.3v1H6.9zm10.9-9.5c-.5 0-.9.4-.9.9s.4.9.9.9.9-.4.9-.9c.1-.5-.3-.9-.9-.9z"
+                                                          class="st0"/>
+                                                </svg>
+                                            </div>
+                                            Print
+                                        </a>
+                                    </li>
+                                    <li class="dropdown__item">
+                                        <a href="#" class="dropdown__link">
+                                            <div class="dropdown__icon-wrap">
+                                                <svg class="dropdown__icon dropdown__icon--delete"
+                                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 19.2">
+                                                    <path d="M15.6 2.2h-4.4V.5c0-.3-.2-.5-.5-.5H5.4c-.3 0-.5.2-.5.5v1.7H.5c-.3 0-.5.2-.5.5s.2.5.5.5h.8v15.5c0 .3.2.5.5.5h12.4c.3 0 .5-.2.5-.5V3.2h.8c.3 0 .5-.2.5-.5s-.1-.5-.4-.5zM5.9 1h4.3v1.2H5.9V1zm7.9 17.2H2.3v-15h11.4v15z"/>
+                                                    <path d="M5.4 5.8c-.3 0-.5.2-.5.5v8.9c0 .3.2.5.5.5s.5-.2.5-.5V6.3c0-.3-.2-.5-.5-.5zm2.7 0c-.3 0-.5.2-.5.5v8.9c0 .3.2.5.5.5s.5-.2.5-.5V6.3c0-.3-.3-.5-.5-.5zm2.1.5v8.9c0 .3.2.5.5.5s.5-.2.5-.5V6.3c0-.3-.2-.5-.5-.5s-.5.2-.5.5z"/>
+                                                </svg>
+                                            </div>
+                                            Delete
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="modal-tabbed__tabs-wrap">
+                            <ul class="modal-tabbed__tabs scrollbar" role="tablist">
+                                <li id="tab1-content" class="modal-tabbed__tab modal-tabbed__tab--no-pad"
+                                    role="tabpanel"
+                                    aria-labelledby="tab1-description" aria-hidden="true">
+                                    <ul class="checklist">
+                                        <li class="checklist__item checklist__item--add">
+                                            <label for="checkbox-add" class="checklist__label">
+                                                <input type="text" id="checkbox-add" placeholder="Add item"
+                                                       class="checklist__add-input">
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-1"
+                                                   class="checklist__input visually-hidden">
+                                            <!-- class checklist__label--checked needs to be toggled via JS upon clicking -->
+                                            <label for="checkbox-1" class="checklist__label checklist__label--checked">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 1" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-2"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-2" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 2" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-3"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-3" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 3" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-2"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-2" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 2" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-3"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-3" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 3" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                    <ul class="checklist">
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-2"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-2" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 2" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-3"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-3" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 3" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-2"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-2" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 2" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-3"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-3" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 3" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-2"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-2" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 2" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                        <li class="checklist__item">
+                                            <input type="checkbox" id="checkbox-3"
+                                                   class="checklist__input visually-hidden">
+                                            <label for="checkbox-3" class="checklist__label">
+                                                <span class="checklist__unchecked"></span>
+                                                <div class="checklist__wrap">
+                                                    <input type="text" value="Item 3" class="checklist__add-input">
+                                                    <svg class="checklist__delete-icon"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 12">
+                                                        <path d="M1 10.7c0 .7.6 1.3 1.3 1.3h5.3c.7 0 1.3-.6 1.3-1.3V3h-8v7.7zM10 1H7V0H3v1H0v1h10V1z"
+                                                              fill="#b6cccc"/>
+                                                    </svg>
+                                                </div>
+                                                <span class="checklist__checked"></span>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li id="tab2-content" class="modal-tabbed__tab modal-tabbed__tab--no-pad"
+                                    role="tabpanel"
+                                    aria-labelledby="tab2-description" aria-hidden="false">
+
+                                    <ul class="attachments">
+                                        <li class="attachments__item attachments__item--add">
+                                            <a href="#" class="attachments__add">
+                                                + Add attachment
+                                            </a>
+                                        </li>
+
+                                        <li class="attachments__item">
+                                            <div class="attachments__img">
+                                        <span class="img__holder">
+                                            <img src="img/file.svg" alt="">
+                                            <span class="pdf__1">
+                                                PDF
+                                            </span>
+                                            <span class="hover">
+                                                <img src="img/eye.svg" alt="">
+                                            </span>
+                                        </span>
+                                            </div>
+                                            <div class="attachments__info">
+                                                <div class="attachments__title">client-presentation.pdf</div>
+                                                <div class="attachments__desc">
+                                                    <span class="attachments__size">22 kb</span>
+                                                    <span class="attachments__separator"> | </span>
+                                                    <div class="attachments__date">added 22. 5. 2017, 13:02</div>
+                                                </div>
+                                            </div>
+                                            <div class="attachments__btns">
+                                                <!--<a href="#" class="attachments__btn">-->
+                                                <!--<svg class="attachments__btn-ico" xmlns="http://www.w3.org/2000/svg"-->
+                                                <!--viewBox="0 0 19 19">-->
+                                                <!--<path d="M18 13.5v3c0 .8-.7 1.5-1.5 1.5h-14c-.8 0-1.5-.7-1.5-1.5v-3H0v3C0 17.9 1.1 19 2.5 19h14c1.4 0 2.5-1.1 2.5-2.5v-3h-1z"-->
+                                                <!--class="st0"/>-->
+                                                <!--<path d="M14.1 9.9l-.7-.7-3.4 3.3V0H9v12.5L5.6 9.1l-.7.8 4.6 4.6 4.6-4.6z"/>-->
+                                                <!--</svg>-->
+                                                <!--<span class="visually-hidden">download</span>-->
+                                                <!--</a>-->
+                                                <!--<a href="#" class="attachments__btn">-->
+                                                <!--<svg class="attachments__btn-ico attachments__btn-ico&#45;&#45;delete"-->
+                                                <!--xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 19">-->
+                                                <!--<path d="M16.5 2H12v-.5c0-.8-.7-1.5-1.5-1.5h-4C5.7 0 5 .7 5 1.5V2H.5c-.3 0-.5.2-.5.5s.2.5.5.5H2v13.5C2 17.9 3.1 19 4.5 19h8c1.4 0 2.5-1.1 2.5-2.5V3h1.5c.3 0 .5-.2.5-.5s-.2-.5-.5-.5zM6 1.5c0-.3.2-.5.5-.5h4c.3 0 .5.2.5.5V2H6v-.5zm8 15c0 .8-.7 1.5-1.5 1.5h-8c-.8 0-1.5-.7-1.5-1.5V3h11v13.5z"/>-->
+                                                <!--<path d="M11 6.5v8c0 .3.2.5.5.5s.5-.2.5-.5v-8c0-.3-.2-.5-.5-.5s-.5.2-.5.5zM8.5 6c-.3 0-.5.2-.5.5v8c0 .3.2.5.5.5s.5-.2.5-.5v-8c0-.3-.2-.5-.5-.5zm-3 0c-.3 0-.5.2-.5.5v8c0 .3.2.5.5.5s.5-.2.5-.5v-8c0-.3-.2-.5-.5-.5z"/>-->
+                                                <!--</svg>-->
+                                                <!--<span class="visually-hidden">delete</span>-->
+                                                <!--</a>-->
+                                                <a href="#" class="attachments__btn attachments__btn-ico--hamburger">
+                                                    <img src="img/hamburger.svg" alt="">
+                                                    <span class="visually-hidden">delete</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="attachments__item">
+                                            <div class="attachments__img">
+                                        <span class="img__holder">
+                                            <img src="img/code.jpg" alt="">
+                                            <span class="hover">
+                                                <img src="img/eye_white.svg" alt="">
+                                            </span>
+                                        </span>
+                                            </div>
+                                            <div class="attachments__info">
+                                                <div class="attachments__title">client-presentation.pdf</div>
+                                                <div class="attachments__desc">
+                                                    <span class="attachments__size">22 kb</span>
+                                                    <span class="attachments__separator"> | </span>
+                                                    <div class="attachments__date">added 22. 5. 2017, 13:02</div>
+                                                </div>
+                                            </div>
+                                            <div class="attachments__btns">
+                                                <!--<a href="#" class="attachments__btn">-->
+                                                <!--<svg class="attachments__btn-ico" xmlns="http://www.w3.org/2000/svg"-->
+                                                <!--viewBox="0 0 19 19">-->
+                                                <!--<path d="M18 13.5v3c0 .8-.7 1.5-1.5 1.5h-14c-.8 0-1.5-.7-1.5-1.5v-3H0v3C0 17.9 1.1 19 2.5 19h14c1.4 0 2.5-1.1 2.5-2.5v-3h-1z"-->
+                                                <!--class="st0"/>-->
+                                                <!--<path d="M14.1 9.9l-.7-.7-3.4 3.3V0H9v12.5L5.6 9.1l-.7.8 4.6 4.6 4.6-4.6z"/>-->
+                                                <!--</svg>-->
+                                                <!--<span class="visually-hidden">download</span>-->
+                                                <!--</a>-->
+                                                <!--<a href="#" class="attachments__btn">-->
+                                                <!--<svg class="attachments__btn-ico attachments__btn-ico&#45;&#45;delete"-->
+                                                <!--xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 19">-->
+                                                <!--<path d="M16.5 2H12v-.5c0-.8-.7-1.5-1.5-1.5h-4C5.7 0 5 .7 5 1.5V2H.5c-.3 0-.5.2-.5.5s.2.5.5.5H2v13.5C2 17.9 3.1 19 4.5 19h8c1.4 0 2.5-1.1 2.5-2.5V3h1.5c.3 0 .5-.2.5-.5s-.2-.5-.5-.5zM6 1.5c0-.3.2-.5.5-.5h4c.3 0 .5.2.5.5V2H6v-.5zm8 15c0 .8-.7 1.5-1.5 1.5h-8c-.8 0-1.5-.7-1.5-1.5V3h11v13.5z"/>-->
+                                                <!--<path d="M11 6.5v8c0 .3.2.5.5.5s.5-.2.5-.5v-8c0-.3-.2-.5-.5-.5s-.5.2-.5.5zM8.5 6c-.3 0-.5.2-.5.5v8c0 .3.2.5.5.5s.5-.2.5-.5v-8c0-.3-.2-.5-.5-.5zm-3 0c-.3 0-.5.2-.5.5v8c0 .3.2.5.5.5s.5-.2.5-.5v-8c0-.3-.2-.5-.5-.5z"/>-->
+                                                <!--</svg>-->
+                                                <!--<span class="visually-hidden">delete</span>-->
+                                                <!--</a>-->
+                                                <a href="#" class="attachments__btn attachments__btn-ico--hamburger">
+                                                    <img src="img/hamburger.svg" alt="">
+                                                    <span class="visually-hidden">delete</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                        <li class="attachments__item">
+                                            <div class="attachments__img">
+                                        <span class="img__holder">
+                                            <img src="img/file.svg" alt="">
+                                            <span class="pdf__1">
+                                                PDF
+                                            </span>
+                                            <span class="hover">
+                                                <img src="img/eye.svg" alt="">
+                                            </span>
+                                        </span>
+                                            </div>
+                                            <div class="attachments__info">
+                                                <div class="attachments__title">client-presentation.pdf</div>
+                                                <div class="attachments__desc">
+                                                    <span class="attachments__size">22 kb</span>
+                                                    <span class="attachments__separator"> | </span>
+                                                    <div class="attachments__date">added 22. 5. 2017, 13:02</div>
+                                                </div>
+                                            </div>
+                                            <div class="attachments__btns">
+                                                <a href="#" class="attachments__btn">
+                                                    <svg class="attachments__btn-ico" xmlns="http://www.w3.org/2000/svg"
+                                                         viewBox="0 0 19 19">
+                                                        <path d="M18 13.5v3c0 .8-.7 1.5-1.5 1.5h-14c-.8 0-1.5-.7-1.5-1.5v-3H0v3C0 17.9 1.1 19 2.5 19h14c1.4 0 2.5-1.1 2.5-2.5v-3h-1z"
+                                                              class="st0"/>
+                                                        <path d="M14.1 9.9l-.7-.7-3.4 3.3V0H9v12.5L5.6 9.1l-.7.8 4.6 4.6 4.6-4.6z"/>
+                                                    </svg>
+                                                    <span class="visually-hidden">download</span>
+                                                </a>
+                                                <a href="#" class="attachments__btn">
+                                                    <svg class="attachments__btn-ico attachments__btn-ico--delete"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 19">
+                                                        <path d="M16.5 2H12v-.5c0-.8-.7-1.5-1.5-1.5h-4C5.7 0 5 .7 5 1.5V2H.5c-.3 0-.5.2-.5.5s.2.5.5.5H2v13.5C2 17.9 3.1 19 4.5 19h8c1.4 0 2.5-1.1 2.5-2.5V3h1.5c.3 0 .5-.2.5-.5s-.2-.5-.5-.5zM6 1.5c0-.3.2-.5.5-.5h4c.3 0 .5.2.5.5V2H6v-.5zm8 15c0 .8-.7 1.5-1.5 1.5h-8c-.8 0-1.5-.7-1.5-1.5V3h11v13.5z"/>
+                                                        <path d="M11 6.5v8c0 .3.2.5.5.5s.5-.2.5-.5v-8c0-.3-.2-.5-.5-.5s-.5.2-.5.5zM8.5 6c-.3 0-.5.2-.5.5v8c0 .3.2.5.5.5s.5-.2.5-.5v-8c0-.3-.2-.5-.5-.5zm-3 0c-.3 0-.5.2-.5.5v8c0 .3.2.5.5.5s.5-.2.5-.5v-8c0-.3-.2-.5-.5-.5z"/>
+                                                    </svg>
+                                                    <span class="visually-hidden">delete</span>
+                                                </a>
+                                                <a href="#" class="attachments__btn attachments__btn-ico--hamburger">
+                                                    <img src="img/hamburger.svg" alt="">
+                                                    <span class="visually-hidden">delete</span>
+                                                </a>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="edit-task__comments">
+                    <div class="container edit-task__container">
+                        <div class="edit-task__comments__title-wrap">
+                            <svg class="edit-task__comments__title-img" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 22.1 20.2">
+                                <path fill="#0d2c54"
+                                      d="M1.4 20.2c-.2 0-.4-.1-.5-.3-.1-.2-.1-.4.1-.6 1.4-1.4 1.6-3.5 1.7-4.1C1 13.6 0 11.5 0 9.2 0 4.1 5 0 11 0s11 4.1 11 9.2-5 9.2-11 9.2c-1.1 0-2.1-.1-3.1-.4-2.8 1.8-6.3 2.2-6.5 2.2.1 0 0 0 0 0zM11 1C5.5 1 1 4.7 1 9.2c0 2 .9 4 2.6 5.5.1.1.2.2.2.4 0 .1 0 2.1-1.1 4 1.3-.3 3.3-.8 4.9-1.9.1-.2.2-.2.4-.2 1 .3 2 .4 3.1.4 5.5 0 10-3.7 10-8.2S16.6 1 11 1z"/>
+                            </svg>
+                            <h2 class="edit-task__comments__title">Comments</h2>
+                        </div>
+                        <div class="edit-task__comments__textarea-wrap">
+                            <textarea name="comment" class="edit-task__comments__textarea"
+                                      placeholder="Add a comment"></textarea>
+                            <div class="edit-task__comments__textarea-btns">
+                                <a href="#" class="edit-task__comments__textarea-btn">
+                                    <svg class="edit-task__comments__textarea-ico" width="18" height="20"
+                                         xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.2 5L5 12a1.8 1.8 0 0 0 2.6 2.6L15.4 7a3.7 3.7 0 0 0-5.2-5.2L2.4 9.5a5.5 5.5 0 1 0 7.8 7.8l5.2-5.2"
+                                              stroke="#0D2C54" fill="none" fill-rule="evenodd" opacity=".8"/>
+                                    </svg>
+                                    <span class="visually-hidden">attachment</span>
+                                </a>
+                                <a href="#" class="edit-task__comments__textarea-btn">
+                                    <svg class="edit-task__comments__textarea-ico" width="18" height="20"
+                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18">
+                                        <path d="M9 18c-5 0-9-4-9-9s4-9 9-9 9 4 9 9-4 9-9 9zM9 1C4.6 1 1 4.6 1 9s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z"/>
+                                        <path d="M9 13.9c-2.4 0-4.5-1.5-4.9-3.5l1-.2c.3 1.5 1.9 2.7 3.9 2.7 1.9 0 3.6-1.2 3.9-2.7l1 .2c-.4 2-2.5 3.5-4.9 3.5z"/>
+                                        <circle cx="12.3" cy="6.5" r="1"/>
+                                        <circle cx="5.7" cy="6.5" r="1"/>
+                                    </svg>
+                                </a>
+                                <a href="#"
+                                   class="edit-task__comments__textarea-btn edit-task__comments__textarea-send">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16">
+                                        <path fill="#fff"
+                                              d="M15.8.1c.1.1.2.3.2.6l-2.3 13.7c0 .2-.1.3-.3.4-.1 0-.2.1-.3.1h-.2l-4-1.7-2.2 2.6c-.1.1-.3.2-.4.2h-.2c-.1 0-.2-.1-.3-.2-.1-.1-.1-.2-.1-.3v-3.1l7.7-9.5-9.5 8.3L.4 9.8c-.3-.2-.4-.4-.4-.6 0-.2.1-.4.3-.5L15.2.1c0-.1.1-.1.2-.1s.3 0 .4.1z"/>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <ul class="edit-task__comments__list">
+                            <li class="edit-task__comments__item comment">
+                                <img class="comment__img" src="img/arnold.png">
+                                <article class="comment__bubble comment__bubble--dark">
+                                    <div class="comment__header">
+                                        <h4 class="comment__title">Arnold Schwarzenegger</h4>
+                                        <span class="comment__separator">|</span>
+                                        <div class="comment__date">22. 5. 2017, 17:55</div>
+                                    </div>
+                                    <div class="comment__content">
+                                        This is my slightly longer comment, but still pretty small
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="edit-task__comments__item comment">
+                                <div class="comment__img comment__img--empty">SB</div>
+                                <article class="comment__bubble">
+                                    <div class="comment__header">
+                                        <h4 class="comment__title">Steve Buscemi</h4>
+                                        <span class="comment__separator">|</span>
+                                        <div class="comment__date">22. 5. 2017, 17:55</div>
+                                    </div>
+                                    <div class="comment__content">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum velit
+                                        at
+                                        nulla semper ornare nec non odio. Nam augue ligula, elementum quis eros id,
+                                        venenatis luctus est. Praesent nulla enim, hendrerit eu aliquet sit amet, porta
+                                        ut
+                                        ipsum.
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <a href="#" class="edit-task__comments__show">View full conversation</a>
+                    </div>
+                </section>
+
+            </section>
+
+        </div>
+
+    </div>
+</main>
+
+<script type="text/javascript">
+    var userMenuToggle = document.querySelector('#js_user-menu-toggle');
+    var userMenu = document.querySelector('#js_user-menu');
+    userMenuToggle.addEventListener("click", function (e) {
+        userMenu.classList.toggle('header__menu--visible');
+    });
+    var modal = document.querySelector('#js_modal');
+    var modalClose = document.querySelector('#js_modal-close');
+    modalClose.addEventListener("click", function (e) {
+        modal.classList.add('modal--hidden');
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+.general-settings {
+
+    $this: &;
+
+    text-align: center;
+
+    &__inputs {
+        text-align: left;
+        margin-bottom: 5rem;
+        &--narrow {
+            max-width: 28rem;
+        }
+    }
+
+    &__label {
+        text-align: left;
+    }
+
+    &__input {
+        text-align: left !important;
+        color: $c6 !important;
+        border-color: $c4 !important;
+        &--lg {
+            font-weight: 500 !important;
+            font-size: 2rem !important;
+        }
+        &--wide {
+            max-width: 35rem !important;
+        }
+        @include placeholder {
+            text-align: left !important;     
+        }
+    }
+
+    &__input-wrap {
+        max-width: 35rem;
+        margin: auto;
+        &:not(:last-child) {
+            margin-bottom: 3rem;            
+        }
+    }
+
+    &__card {
+        position: relative;
+        min-height: 12rem;
+        font-size: 1.4rem;
+        cursor: pointer;
+
+        &__text {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity .3s;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            color: $c1;
+            margin-bottom: 0;
+            background-image: $bs3;
+            text-transform: none;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+    }
+
+    &__picker {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+        align-items: center;
+        &__notice {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-right: 2rem;
+            white-space: nowrap;
+        }
+        &__desc {
+            text-align: left;
+        }
+        &__list {
+            display: flex;
+            align-items: center;
+            padding: .5rem 0;
+        }
+        &__item {
+            display: inline-block;
+            margin-right: 1rem;
+            width: 1.8rem;
+            height: 1.8rem;
+        }
+        &__input:checked + #{$this}__picker__label {
+            &:before {
+                content: '';
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                background-image: url(../img/check-user.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 9px;
+            }
+            transform: scale(1.2);
+        }
+        &__label {
+            position: relative;
+            display: inline-block;
+            left: 0;
+            width: 1.8rem;
+            height: 1.8rem;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: all .3s;
+            &--red {
+                background-color: $c15;
+            }
+            &--orange {
+                background-color: $c16;
+            }
+            &--yellow {
+                background-color: $c17;
+            }
+            &--green {
+                background-color: $c18;
+            }
+            &--cyan {
+                background-color: $c19;
+            }
+            &--azure {
+                background-color: $c20;
+            }
+            &--blue {
+                background-color: $c21;
+            }
+            &--purple {
+                background-color: $c22;
+            }
+            &--label0 {
+                border: .1rem solid $c31;
+            }
+            &--label1 {
+                background-color: $c32;
+            }
+            &--label2 {
+                background-color: $c33;
+            }
+            &--label3 {
+                background-color: $c34;
+            }
+            &--label4 {
+                background-color: $c35;
+            }
+            &--label5 {
+                background-color: $c36;
+            }
+            &--label6 {
+                background-color: $c37;
+            }
+            &--label7 {
+                background-color: $c38;
+            }
+
+            &:hover {
+                opacity: .5;
+            }
+        }
+    }
+
+    &__initials-wrap {
+        position: relative;
+        &:after {
+            content: attr(data-initials);
+            position: absolute;
+            right: 0;
+            font-weight: 900;
+            letter-spacing: .1em;
+            color: $c4;
+            bottom: 0;
+            padding: .75em 0;
+        }
+        #{$this}__input {
+            padding-right: 3rem;
+        }
+        &.dropdown__outer-wrap {
+            &:after {
+                right: 3rem;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $c12;
+        display: block;
+        margin-top: 1rem;
+    }
+
+    &__notifications {
+        margin-bottom: 5rem;
+    }
+
+    &__notice,
+    &__text {
+        color: $c9;
+        text-align: left;
+        font-size: 1.3rem;
+        line-height: 1.23;
+    }
+
+    &__notice {
+        font-style: italic;
+        margin-bottom: 1.5em;
+        &--mt {
+            margin-top: .75em;
+        }
+    }
+
+    @media(min-width: $md * 1em) {
+        &__inputs,
+        &__colours,
+        &__notifications {
+            lost-column: 1/2;
+        }
+        &__picker {
+            &__desc {
+                text-align: center;
+            }
+        }
+    }
+}

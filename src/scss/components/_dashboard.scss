@@ -1,0 +1,25 @@
+.dashboard {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        width: 100%;
+        margin-bottom: 4rem;
+        &:not(:last-child) {
+        }
+    }
+
+    @media(min-width: $md * 1em) {
+        &__card {
+            lost-column: 1/2 auto 4rem;
+        }        
+    }
+
+    @media(min-width: $lg * 1em) {
+        &__card {
+            lost-column: 1/3 auto 4rem;
+        }        
+    }
+}

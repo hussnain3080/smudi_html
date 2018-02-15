@@ -1,0 +1,58 @@
+.rich-text-btns {
+    $this: &;
+    display: flex;
+    &__item {
+        margin-right: .6rem;
+        &--margin {
+            margin-right: 2rem;
+        }
+    }
+    &__btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 2.8rem;
+        height: 2.8rem;
+        border-radius: 50%;
+        background-color: $c1;
+        border: none;
+        cursor: pointer;
+        transition: background-color .3s;
+        box-shadow: $bs6;
+        &:hover {
+             background-color: $c12;
+            #{$this}__icon {
+                fill: $c1;
+            }
+        }
+    }
+    &__icon {
+        fill: $c6;
+        transition: fill .3s;
+        &--attachment {
+            width: 1.4rem;
+        }
+        &--bold {
+            width: .9rem;
+        }
+        &--italics {
+            width: .8rem;
+        }
+        &--underscore {
+            width: 1rem;
+        }
+        &--left {
+            width: 1.2rem;
+        }
+        &--right {
+            width: 1.2rem;
+        }
+        &--list {
+            width: 1.4rem;
+        }
+        &--numbered-list {
+            width: 1.4rem;
+        }
+
+    }
+}

@@ -1,0 +1,63 @@
+.attachments {
+    &__item {
+        height: 7.6rem;
+        padding: 0 2rem;
+        border-radius: .3rem;
+        background-color: rgba($c4, .2);
+        margin-bottom: 1.4rem;
+        display: flex;
+        align-items: center;
+        &--add {
+            padding: 0;
+            background-color: $c1;
+        }
+    }
+    &__add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        border: .1rem solid rgba($c4, .5);
+        color: $c12;
+        border-radius: .3rem;
+    }
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $c6;
+    }
+    &__desc {
+        display: flex;
+        font-size: 1.2rem;
+        color: $c9;
+    }
+    &__separator {
+        margin: 0 .5rem;
+    }
+    &__btns {
+        margin-left: auto;
+        display: flex;
+    }
+    &__btn {
+        display: flex;
+        &:last-child {
+            margin-left: 2rem;
+        }
+
+    }
+    &__btn-ico {
+        width: 1.8rem;
+        height: 1.8rem;
+        &--delete {
+            width: 1.6rem;
+        }
+    }
+    
+    @media (min-width: $md * 1em) {
+        lost-utility: clearfix;
+        &__item {
+            lost-column: 1/2 auto 1.4rem;
+        }
+    }
+}

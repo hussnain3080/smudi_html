@@ -1,0 +1,91 @@
+.tag {
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: $c1;
+    background-color: $c6;
+    padding: .5rem .7rem;
+    border-radius: .3rem;
+    letter-spacing: .15rem;
+    white-space: nowrap;
+    border: none;
+
+    &__icon {
+        margin-right: .6rem;
+    }
+
+    &--large {
+        padding: .6rem 1rem;
+        height: 2.8rem;
+    }
+
+    &--small {
+        font-size: .8rem;
+        padding-bottom: .4rem;
+        padding-top: .4rem;
+    }
+
+    &--extra-small {
+        font-size: .8rem;
+        padding-bottom: .2rem;
+        padding-top: .2rem;
+    }
+
+    &--c1 {
+        background-color: $c1;
+        color: $c6;        
+    }
+
+    &--c3 {
+        background-color: $c3;
+    }
+
+    &--c4 {
+        background-color: $c4;        
+    }
+
+    &--rounded {
+        border-radius: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    &--btn {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    &--add {
+        font-size: 1.25rem;
+        padding: .5rem .7rem;
+    }
+
+    &--plus {
+        font-size: 1.25rem;
+        margin-right: .5rem;
+    }
+
+    &--label1 {
+        color: $c32;
+    }
+    &--label2 {
+        color: $c33;
+    }
+    &--label3 {
+        color: $c34;
+    }
+    &--label4 {
+        color: $c35;
+    }
+    &--label5 {
+        color: $c36;
+    }
+    &--label6 {
+        color: $c37;
+    }
+    &--label7 {
+        color: $c38;
+    }
+}

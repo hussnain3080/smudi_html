@@ -1,0 +1,96 @@
+.checklist {
+    $this: &;
+    &__label {
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        line-height: 1;
+        text-transform: none;
+        font-size: 1.4rem;
+        color: $c2;
+        cursor: pointer;
+        letter-spacing: normal;
+        &--checked {
+            text-decoration: line-through;
+            #{$this}__checked {
+                display: block;
+            }
+        }
+    }
+    &__checked,
+    &__unchecked {
+        content: '';
+        display: inline-flex;
+        width: 1.6rem;
+        height: 1.6rem;
+        min-width: 1.6rem;
+        min-height: 1.6rem;
+        border-radius: .3rem;
+    }
+    &__unchecked {
+        border: .1rem solid $c4;
+        margin-right: .8rem;
+        &:hover {
+            background-color: $c4;
+            background-image: url(../img/check-user.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 11px;
+        }
+    }
+    &__checked {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0px;
+        background-color: $c6;
+        background-image: url(../img/check-user.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 11px;
+        &:hover {
+            background-image: none;
+        }
+    }
+    &__item {
+        margin-bottom: 2rem;
+        display: flex;
+        &--add {
+            &:before {
+                content: '';
+                display: inline-flex;
+                width: 1.6rem;
+                height: 1.6rem;
+                min-width: 1.6rem;
+                min-height: 1.6rem;
+                border-radius: .3rem;
+                border: .1rem solid $c4;
+                margin-right: .8rem;
+            }
+        }
+    }
+    &__add-input {
+        padding: 0 !important;
+        text-align: left !important;
+        font-size: 1.4rem !important;
+        color: $c2 !important;
+        @include placeholder {
+            text-align: left !important;
+        }
+    }
+    &__delete-icon {
+        width: 1rem;
+        display: none;
+        margin-left: 1rem;
+    }
+    &__wrap {
+        display: flex;
+        height: 1.7rem;
+        width: 15rem;
+        &:hover {
+            #{$this}__delete-icon {
+                display: block;
+            }
+        }
+    }
+}

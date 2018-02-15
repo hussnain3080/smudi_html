@@ -1,0 +1,28 @@
+.status-icon {
+    display: inline-flex;
+    width: 2.4rem;
+    height: 2.4rem;
+    color: $c1;
+    background-color: $c12;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: .3rem;
+
+    &__icon {
+        fill: $c1;
+    }
+
+    &--doing {
+        background-color: $c18;
+    }
+
+    &--hold {
+        background-color: $c26;
+    }
+
+    &--done {
+        background-color: $c6;
+    }
+}

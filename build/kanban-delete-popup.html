@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Smudi</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__container container">
+
+        <div class="header__links">
+            <h1 class="header__logo"><a href="#">smudi</a></h1>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--active">Project total recall</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__user">
+
+            <a class="header__user__notice header__user__notice--show-num js_notifications-toggle" href="#"
+               data-number="4">
+                your notices
+            </a>
+
+            <a class="header__user__profile" href="#" id="js_user-menu-toggle">
+
+                <img class="header__user__img" src="img/arnold.png">
+                <div class="header__user__img header__user__img--empty">AS</div>
+                <span class="header__user__name">Arnold Schwarzeneger</span>
+
+                <div class="header__menu" id="js_user-menu">
+                    <h3 class="header__menu__heading">My profile</h3>
+                    <ul class="header__menu__nav">
+                        <li class="header__menu__nav-item"><a href="#" class="header__menu__nav-link">Project
+                            settings</a></li>
+                        <li class="header__menu__nav-item"><a href="#" class="header__menu__nav-link">Company
+                            settings</a></li>
+                    </ul>
+                    <a href="#" class="header__menu__logout">Logout</a>
+                </div>
+
+            </a>
+        </div>
+    </div>
+
+    <div class="header__notifications js_notifications">
+        <div class="notifications">
+            <ul class="notifications__list">
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 09:37</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>
+                            just invited you to a project <a href="#" class="notifications__link"><strong>Totall
+                                recall</strong></a></div>
+                        <div class="notifications__btns">
+                            <a class="btn-round notifications__btn">
+                                <span class="visually-hidden">accept</span>
+                                <svg width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4l3 3L10.5.7" stroke-width="2" fill="none" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+                            <a class="btn-round btn-round--decline notifications__btn">
+                                <span class="visually-hidden">decline</span>
+                                <svg width="9" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.4 9.4">
+                                    <path d="M9.4 1.4L8 0 4.7 3.3 1.4 0 0 1.4l3.3 3.3L0 8l1.4 1.4L4.7 6 8 9.5 9.4 8 6 4.7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 10:01</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>
+                            just finished a task <a href="#" class="notifications__link"><strong>Prepare design
+                                specs</strong></a></div>
+                    </div>
+                </li>
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 09:37</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>
+                            just invited you to a project <a href="#" class="notifications__link"><strong>Totall
+                                recall</strong></a></div>
+                        <div class="notifications__btns">
+                            <a class="btn-round notifications__btn">
+                                <span class="visually-hidden">accept</span>
+                                <svg width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg"><title>
+                                    Page 1</title>
+                                    <path d="M1 4l3 3L10.5.7" stroke-width="2" fill="none" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+                            <a class="btn-round btn-round--decline notifications__btn">
+                                <span class="visually-hidden">decline</span>
+                                <svg width="9" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.4 9.4">
+                                    <path d="M9.4 1.4L8 0 4.7 3.3 1.4 0 0 1.4l3.3 3.3L0 8l1.4 1.4L4.7 6 8 9.5 9.4 8 6 4.7z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 10:01</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>
+                            just finished a task <a href="#" class="notifications__link"><strong>Prepare design
+                                specs</strong></a></div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="notifications__bottom-btn">
+                <a href="#" class="btn btn--dark-outline">Show all notifications</a>
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main class="main--kanban">
+
+    <ul class="kanban container">
+
+        <li class="kanban__column">
+
+            <div class="kanban__column__header">
+                <h2 class="kanban__column__title">Todo (4)</h2>
+                <div class="kanban__column__header-right">
+                    <span class="status-icon status-icon--new">N</span>
+                    <a class="kanban__column__menu-toggle" href="#">
+                        <span class="visually-hidden">settings</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3" height="20" viewBox="0 0 3 17">
+                            <style>.st0 {
+                                fill: #0D2C54;
+                            }</style>
+                            <g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <circle class="st0" cx="1.5" cy="15.5" r="1.5"/>
+                                                <circle class="st0" cx="1.5" cy="8.5" r="1.5"/>
+                                                <circle class="st0" cx="1.5" cy="1.5" r="1.5"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <section class="kanban__card kanban-card">
+                <a class="kanban-card__header jq_card-toggle" href="#">
+                    <img class="kanban-card__user" src="img/arnold.png">
+                    <div class="kanban-card__header__text">
+                        <h3 class="kanban-card__title">This is a card with a longer name than usual <span
+                                class="kanban-card__title--small">(09:00)</span></h3>
+                        <span class="kanban-card__subtitle">Running</span>
+                    </div>
+                    <button class="kanban-card__toggle" href="#"><span class="visually-hidden">toggle card</span>
+                    </button>
+                </a>
+                <ul class="kanban-card__tags">
+                    <li class="kanban-card__tag kanban-card__tag--collapsed tag tag--small tag--c4">Label name</li>
+                    <li class="kanban-card__tag kanban-card__tag--collapsed tag tag--small tag--c4">Label</li>
+                    <li class="kanban-card__tag kanban-card__tag--collapsed tag tag--small tag--c4">Label w/ medium
+                        name
+                    </li>
+                    <li class="kanban-card__tag kanban-card__tag--collapsed tag tag--small tag--c4">This label has a
+                        long name
+                    </li>
+                    <li class="kanban-card__tag kanban-card__tag--collapsed tag tag--small tag--c4">This label has a
+                        super crazy long name
+                    </li>
+                </ul>
+                <div class="kanban-card__content">
+
+                    <p class="kanban-card__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                        eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                    <div class="kanban-card__status">
+                        <div class="kanban-card__date">
+                            <svg class="kanban-card__icon" width="17" height="17" viewBox="0 0 17 17"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <g stroke="#0D2C54" fill="none" fill-rule="evenodd">
+                                    <circle cx="8.5" cy="8.5" r="8"/>
+                                    <path d="M8.5 8.5v-5M8.5 9H12" stroke-linecap="square"/>
+                                </g>
+                            </svg>
+                            <span>24. 5. 2017</span>
+                        </div>
+                        <div class="kanban-card__comments">
+                            <svg class="kanban-card__icon" width="20" height="17" viewBox="0 0 20 17"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M2.8 16c.7 0 1.3-.3 2-.5l1.3-.8h1.4l2.6.2c1 0 2-.2 3-.5 1.6-.4 3-1.2 4.2-2.4.8-.8 1.5-1.8 1.7-3 .2-1.3 0-2.6-.5-3.8-.5-1-1.2-1.8-2-2.5-1-.8-2.2-1.4-3.5-1.7-1.4-.4-3-.5-4.3-.4C7 .8 5.4 1.4 4 2.4 3 3 2.5 3.8 2 4.7 1 6 .8 7.3 1 8.7c.3 1 .6 1.8 1.2 2.6.4.6 1 1 1.6 1.6.3 0 .3.4.2.7L3.4 15l-.6 1z"
+                                      stroke="#0D2C54" fill="none" fill-rule="evenodd"/>
+                            </svg>
+                            <span>4</span>
+                            <span class="tag tag--extra-small kanban-card__comments__tag">1 new</span>
+                        </div>
+                        <div class="kanban-card__attachments">
+                            <svg class="kanban-card__icon" width="8" height="16" viewBox="0 0 8 16"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7 3.6V12c0 1.6-1.4 3-3 3s-3-1.4-3-3V3c0-1 1-2 2-2s1.7 1 1.7 2v7.5c0 .4-.3.8-.7.8-.4 0-.7-.4-.7-.8v-7h-1v7c0 1 .7 2 1.7 2s1.8-1 1.8-2V3c0-1.7-1.3-3-3-3C1.4 0 0 1.3 0 3v9c0 2.2 1.8 4 4 4s4-1.8 4-4V3.6H7z"
+                                      fill-rule="nonzero" fill="#0D2C54"/>
+                            </svg>
+                            <span>2</span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="kanban-card__status-bar kanban-card__status-bar--ok kanban-card__status-bar--collapsed">You
+                    are doing great!
+                </div>
+
+            </section>
+
+            <div class="kanban__add-wrap">
+                <a class="kanban__add-card" href="#">
+                    <svg class="kanban__add-card__plus" width="8" height="8" viewBox="0 0 14 14"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <g stroke="#1EC4ED" stroke-width="3" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                            <path d="M7 1v12M13 7H1"/>
+                        </g>
+                    </svg>
+                    <span>Add a card</span>
+                </a>
+            </div>
+
+        </li>
+
+        <li class="kanban__column">
+            <div class="kanban__column__header">
+                <h2 class="kanban__column__title">Doing</h2>
+                <div class="kanban__column__header-right">
+                    <span class="status-icon status-icon--doing">
+                        <svg class="status-icon__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" width="14"
+                             height="14"><path
+                                d="M7 0C3.1 0 0 3.1 0 7c0 3.6 2.7 6.6 6.3 7h1.4c3.5-.4 6.3-3.3 6.3-7 0-3.9-3.1-7-7-7zm3 9.6l-3.3-2V3.8h1v3.3l2.8 1.7-.5.8z"/></svg>
+                    </span>
+                    <a class="kanban__column__menu-toggle" href="#">
+                        <span class="visually-hidden">settings</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3" height="20" viewBox="0 0 3 17">
+                            <style>.st0 {
+                                fill: #0D2C54;
+                            }</style>
+                            <g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <circle class="st0" cx="1.5" cy="15.5" r="1.5"/>
+                                                <circle class="st0" cx="1.5" cy="8.5" r="1.5"/>
+                                                <circle class="st0" cx="1.5" cy="1.5" r="1.5"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+
+                        <ul class="dropdown__list task__actions">
+                            <li class="dropdown__item">
+                                <img src="img/delete.svg" alt="">
+                                <a href="#" class="dropdown__link dropdown__link--selected">Delete</a>
+                            </li>
+                        </ul>
+
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li class="kanban__column">
+            <div class="kanban__column__header">
+                <h2 class="kanban__column__title">On Hold</h2>
+                <div class="kanban__column__header-right">
+                    <span class="status-icon status-icon--hold">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10" class="status-icon__icon" width="8"
+                             height="10"><path d="M6 0h2v10H6z"/><path d="M0 0h2v10H0z"/></svg>
+                    </span>
+                    <a class="kanban__column__menu-toggle" href="#">
+                        <span class="visually-hidden">settings</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3" height="20" viewBox="0 0 3 17">
+                            <style>.st0 {
+                                fill: #0D2C54;
+                            }</style>
+                            <g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <circle class="st0" cx="1.5" cy="15.5" r="1.5"/>
+                                                <circle class="st0" cx="1.5" cy="8.5" r="1.5"/>
+                                                <circle class="st0" cx="1.5" cy="1.5" r="1.5"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li class="kanban__column">
+            <div class="kanban__column__header">
+                <h2 class="kanban__column__title">Done</h2>
+                <div class="kanban__column__header-right">
+                    <span class="status-icon status-icon--done">
+                        <svg class="status-icon__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.4 8.3"
+                             width="11" height="8"><path d="M4.6 8.3L0 3.7l1.4-1.4 3.2 3.1L10 0l1.4 1.4z"/></svg>
+                    </span>
+                    <a class="kanban__column__menu-toggle" href="#">
+                        <span class="visually-hidden">settings</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="3" height="20" viewBox="0 0 3 17">
+                            <style>.st0 {
+                                fill: #0D2C54;
+                            }</style>
+                            <g>
+                                <g>
+                                    <g>
+                                        <g>
+                                            <g>
+                                                <circle class="st0" cx="1.5" cy="15.5" r="1.5"/>
+                                                <circle class="st0" cx="1.5" cy="8.5" r="1.5"/>
+                                                <circle class="st0" cx="1.5" cy="1.5" r="1.5"/>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <a class="kanban__column kanban__column--add" href="#">
+            <svg class="kanban__column__plus" width="14" height="14" viewBox="0 0 14 14"
+                 xmlns="http://www.w3.org/2000/svg">
+                <g stroke="#1EC4ED" stroke-width="2" fill="none" fill-rule="evenodd" stroke-linecap="square">
+                    <path d="M7 1v12M13 7H1"/>
+                </g>
+            </svg>
+        </a>
+
+        <li class="kanban__column kanban__column--add-detail">
+            <div class="kanban__column__header">
+                <h2 class="kanban__column__title">Create new column</h2>
+            </div>
+            <div class="kanban__column__input-wrap">
+                <label class="kanban__column__label" for="new-project-description">Add a column name</label>
+                <input type="text" name="new-project-description" class="dark" id="new-project-description"
+                       placeholder="For example: Client review">
+            </div>
+            <p class="kanban__column__label label">Select a column type:</p>
+            <ul class="stacked-radio-btns">
+                <li class="stacked-radio-btns__item">
+                    <input class="stacked-radio-btns__radio visually-hidden-2" type="radio" name="col-type" id="new">
+                    <label class="stacked-radio-btns__btn" for="new">New</label>
+                </li>
+                <li class="stacked-radio-btns__item">
+                    <input class="stacked-radio-btns__radio visually-hidden-2" type="radio" name="col-type"
+                           id="running">
+                    <label class="stacked-radio-btns__btn" for="running">
+                        <svg class="stacked-radio-btns__icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14">
+                            <g fill="none" fill-rule="evenodd">
+                                <circle cx="7" cy="7" r="6.5" stroke="#0D2C54"/>
+                                <path fill="#0D2C54" fill-rule="nonzero"
+                                      d="M7.65 3.763H6.7v3.8l3.325 1.994.475-.78-2.85-1.69"/>
+                            </g>
+                        </svg>
+                        Running
+                    </label>
+                </li>
+                <li class="stacked-radio-btns__item">
+                    <input class="stacked-radio-btns__radio visually-hidden-2" type="radio" name="col-type"
+                           id="waiting">
+                    <label class="stacked-radio-btns__btn" for="waiting">
+                        <svg class="stacked-radio-btns__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10"
+                             width="8"
+                             height="10">
+                            <path d="M6 0h2v10H6z"/>
+                            <path d="M0 0h2v10H0z"/>
+                        </svg>
+                        Waiting
+                    </label>
+                </li>
+                <li class="stacked-radio-btns__item">
+                    <input class="stacked-radio-btns__radio visually-hidden-2" type="radio" name="col-type"
+                           id="completed">
+                    <label class="stacked-radio-btns__btn" for="completed">
+                        <svg class="stacked-radio-btns__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.4 8.3"
+                             width="11" height="8">
+                            <path d="M4.6 8.3L0 3.7l1.4-1.4 3.2 3.1L10 0l1.4 1.4z"/>
+                        </svg>
+                        Completed
+                    </label>
+                </li>
+            </ul>
+            <div class="kanban__hints">
+                <a href="#" class="kanban__hints__link">What should I choose?</a>
+                <div class="kanban__hints__text">
+                    <p class="label">Column types explanation:</p>
+
+                    <h3 class="kanban__hints__title">New</h3>
+                    <p class="kanban__hints__p">Unprocessed tasks residing in a backlog, a coming sprint or simply any
+                        task in a 'To Do' list.
+                        Tasks are uninitiated and will not be impacted by time-tracking.</p>
+
+                    <h3 class="kanban__hints__title">
+                        <svg class="kanban__hints__title-icon" xmlns="http://www.w3.org/2000/svg" width="14"
+                             height="14">
+                            <g fill="none" fill-rule="evenodd">
+                                <circle cx="7" cy="7" r="6.5" stroke="#0D2C54"/>
+                                <path fill="#0D2C54" fill-rule="nonzero"
+                                      d="M7.65 3.763H6.7v3.8l3.325 1.994.475-.78-2.85-1.69"/>
+                            </g>
+                        </svg>
+                        Running
+                    </h3>
+                    <p class="kanban__hints__p">Unprocessed tasks residing in a backlog, a coming sprint or simply any
+                        task in a 'To Do' list.
+                        Tasks are uninitiated and will not be impacted by time-tracking.</p>
+
+                    <h3 class="kanban__hints__title">
+                        <svg class="kanban__hints__title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 10"
+                             width="8"
+                             height="10">
+                            <path d="M6 0h2v10H6z"/>
+                            <path d="M0 0h2v10H0z"/>
+                        </svg>
+                        Running
+                    </h3>
+                    <p class="kanban__hints__p">Unprocessed tasks residing in a backlog, a coming sprint or simply any
+                        task in a 'To Do' list.
+                        Tasks are uninitiated and will not be impacted by time-tracking.</p>
+
+                    <h3 class="kanban__hints__title">
+                        <svg class="kanban__hints__title-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.4 8.3"
+                             width="11" height="8">
+                            <path d="M4.6 8.3L0 3.7l1.4-1.4 3.2 3.1L10 0l1.4 1.4z"/>
+                        </svg>
+                        Completed
+                    </h3>
+                    <p class="kanban__hints__p">Unprocessed tasks residing in a backlog, a coming sprint or simply any
+                        task in a 'To Do' list.
+                        Tasks are uninitiated and will not be impacted by time-tracking.</p>
+
+
+                </div>
+            </div>
+            <a class="btn btn--large btn--dark kanban__column__btn">Create column</a>
+        </li>
+
+    </ul>
+</main>
+
+
+<div class="modal delete__modal" id="js_modal">
+
+    <section class="modal-general">
+        <a class="modal-general__close" href="#" id="js_modal-close">close</a>
+        <div class="modal-general__header">
+            <div class="modal-general__text-wrap">
+                <h2 class="modal-general__heading">Are you sure?</h2>
+                <p class="">Deleting is permanent, you won’t be able to reach this project anymore.</p>
+            </div>
+            <div class="modal-general__btn-wrap">
+                <a class="modal-general__btn btn btn--large btn--dark">Yes</a>
+                <a class="modal-general__btn btn btn--large">No</a>
+            </div>
+        </div>
+    </section>
+
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+
+    var userMenuToggle = document.querySelector('#js_user-menu-toggle');
+    var userMenu = document.querySelector('#js_user-menu');
+    userMenuToggle.addEventListener("click", function (e) {
+        userMenu.classList.toggle('header__menu--visible');
+    });
+
+    var notifications = document.querySelector('.js_notifications');
+    var notificationsToggle = document.querySelector('.js_notifications-toggle');
+    notificationsToggle.addEventListener("click", function (e) {
+        notifications.classList.toggle('header__notifications--visible');
+    });
+
+    $('.jq_card-toggle').click(function () {
+        var content = $(this).siblings('.kanban-card__content').slideToggle();
+        $(this).siblings('.kanban-card__tags').find('.tag').toggleClass('kanban-card__tag--collapsed');
+        $(this).siblings('.kanban-card__status-bar').toggleClass('kanban-card__status-bar--collapsed');
+        $(this).find('.kanban-card__toggle').toggleClass('kanban-card__toggle--uncollapsed');
+    });
+
+</script>
+</body>
+</html>

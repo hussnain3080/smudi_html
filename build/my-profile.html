@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Smudi</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="header__container container">
+        
+        <div class="header__links">
+            <h1 class="header__logo"><a  href="#">smudi</a></h1>
+            <nav class="header__nav nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#" class="nav__link nav__link--active">Projects</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header__user">
+
+            <a class="header__user__notice header__user__notice--show-num js_notifications-toggle" href="#" data-number="4">
+                your notices
+            </a>
+
+            <a class="header__user__profile" href="#" id="js_user-menu-toggle">
+
+                <img class="header__user__img" src="img/arnold.png">
+                <div class="header__user__img header__user__img--empty">AS</div>
+                <span class="header__user__name">Arnold Schwarzeneger</span>
+
+                <div class="header__menu" id="js_user-menu">
+                    <h3 class="header__menu__heading">My profile</h3>
+                    <ul class="header__menu__nav">
+                        <li class="header__menu__nav-item"><a href="#" class="header__menu__nav-link">Project settings</a></li>
+                        <li class="header__menu__nav-item"><a href="#" class="header__menu__nav-link">Company settings</a></li>
+                    </ul>
+                    <a href="#" class="header__menu__logout">Logout</a>
+                </div>
+                
+            </a>
+        </div>
+    </div>
+
+    <div class="header__notifications js_notifications">
+        <div class="notifications">
+            <ul class="notifications__list">
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 09:37</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong> just invited you to a project <a href="#" class="notifications__link"><strong>Totall recall</strong></a></div>
+                        <div class="notifications__btns">
+                            <a class="btn-round notifications__btn">
+                                <span class="visually-hidden">accept</span>
+                                <svg width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 4l3 3L10.5.7" stroke-width="2" fill="none" fill-rule="evenodd"/>
+                                </svg>
+                            </a>
+                            <a class="btn-round btn-round--decline notifications__btn">
+                                <span class="visually-hidden">decline</span>
+                                <svg width="9" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.4 9.4"><path d="M9.4 1.4L8 0 4.7 3.3 1.4 0 0 1.4l3.3 3.3L0 8l1.4 1.4L4.7 6 8 9.5 9.4 8 6 4.7z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 10:01</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>  just finished a task <a href="#" class="notifications__link"><strong>Prepare design specs</strong></a></div>
+                    </div>
+                </li>
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 09:37</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong> just invited you to a project <a href="#" class="notifications__link"><strong>Totall recall</strong></a></div>
+                        <div class="notifications__btns">
+                            <a class="btn-round notifications__btn">
+                                <span class="visually-hidden">accept</span>
+                                <svg width="12" height="9" viewBox="0 0 12 9" xmlns="http://www.w3.org/2000/svg"><title>Page 1</title><path d="M1 4l3 3L10.5.7" stroke-width="2" fill="none" fill-rule="evenodd"/></svg>
+                            </a>
+                            <a class="btn-round btn-round--decline notifications__btn">
+                                <span class="visually-hidden">decline</span>
+                                <svg width="9" height="9" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.4 9.4"><path d="M9.4 1.4L8 0 4.7 3.3 1.4 0 0 1.4l3.3 3.3L0 8l1.4 1.4L4.7 6 8 9.5 9.4 8 6 4.7z"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="notifications__item">
+                    <div class="notifications__top">
+                        <div class="notifications__date">Today 10:01</div>
+                        <div class="notifications__project">Project total recall</div>
+                    </div>
+                    <div class="notifications__body">
+                        <img class="notifications__img" src="img/silvester.jpg">
+                        <div class="notifications__text"><strong class="notifications__user">Jack Nicholson</strong>  just finished a task <a href="#" class="notifications__link"><strong>Prepare design specs</strong></a></div>
+                    </div>
+                </li>
+
+            </ul>
+
+            <div class="notifications__bottom-btn">
+                <a href="#" class="btn btn--dark-outline">Show all notifications</a>                
+            </div>
+        </div>
+
+    </div>
+</header>
+
+<main>    
+<div class="container">
+
+    <section class="modal-tabbed modal-tabbed--transparent modal-tabbed--standalone">
+        <h2 class="h2--large h2--my-profile">My profile</h2>
+        <section class="modal-tabbed modal-tabbed--transparent">
+            
+
+            <div class="modal-tabbed__header">
+                <a class="modal-tabbed__btn" role="tab" aria-selected="false" aria-controls="tab1-content" tabindex="0">
+                    <svg class="modal-tabbed__ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.6 18.8" style="enable-background:new 0 0 15.6 18.8;" width="14.6" height="17.8"><path fill='#0D2C54' d="M7.8 18.8h-.3c-1 0-2 0-3-.2-.8 0-1.7-.2-2.6-.6-.4 0-1-.3-1.4-.8-.4-.4-.6-1-.6-1.5v-.2-.6c0-.6.3-1 .5-1.2.5-.7 1.2-1 1.7-1.4 1-.5 1.8-1 2.8-1.3.4-.4.5-.8.3-1.2-1-1-1.7-2.5-2-4 0-1.3 0-2.3.5-3.3.6-1.3 1.6-2 3-2.4 1.5-.2 2.8 0 4 1 .6.6 1 1.4 1.3 2.4.4 1.2.3 2.4-.2 3.6-.3 1-.8 2-1.5 2.7v1c0 .2 0 .3.2.4 1.3.5 2.3 1 3.2 1.6.6.4 1 .7 1.4 1.2.6.5.8 1 .7 1.7v.8c-.2.6-.7 1-1 1.2-.6.4-1.2.6-1.7.7l-2.3.4h-2l-1 .2zM7.8 1H7c-1 .3-1.8 1-2.3 2-.3.6-.4 1.5-.3 2.5C4.6 7 5.2 8 6 9l.3.4c.3.8 0 1.5-.3 2.2l-.6.5-2.6 1.3-1.5 1.2-.3.6v.8c0 .3 0 .5.3.8.2.2.5.4 1 .5.8.4 1.6.5 2.3.6 1 0 2 0 3 .2h2.9c.6 0 1.4-.3 2-.4.5 0 1-.3 1.5-.6.3-.2.5-.4.5-.6V15.6c0-.4 0-.7-.4-1l-1-1c-.8-.5-1.8-1-3-1.4-.2 0-.4-.2-.5-.3 0-.3-.2-.4-.3-.6-.2-.5-.2-1 0-1.7 0 0 0-.3.2-.4.6-.7 1-1.5 1.4-2.3.4-1 .5-2 .3-3 0-1-.3-1.7-1-2.2-.6-.5-1.3-.8-2-.8z"/></svg>
+
+                    <span id="tab1-description">Edit profile</span>
+                </a>
+                <a class="modal-tabbed__btn" role="tab" aria-selected="true" aria-controls="tab4-content" tabindex="0">
+                    <svg class="modal-tabbed__ico" xmlns="http://www.w3.org/2000/svg" width="19" height="19">
+                        <g fill="none" fill-rule="evenodd" stroke="#0D2C54">
+                            <circle cx="9.5" cy="9.5" r="9"/>
+                            <path d="M9.5 9.5V3.445M9.5 10H13" stroke-linecap="square"/>
+                        </g>
+                    </svg>
+                    <span id="tab4-description">Work schedule</span>
+                </a>
+                <a class="modal-tabbed__btn" role="tab" aria-selected="false" aria-controls="tab3-content" tabindex="0">
+                    <svg class="modal-tabbed__ico" width="15" height="18" viewBox="0 0 15 18" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd" opacity=".8"><path d="M8 13c.7 0 1.2-.8 1.2-1.6 0-1-.7-1.8-1.7-1.8s-1.7.8-1.7 1.8c0 .8.5 1.5 1 1.7v2c0 .3.4.6.7.6.3 0 .6-.3.6-.6v-2zM2 6h11c1 0 2 1 2 2v8c0 1-1 2-2 2H2c-1 0-2-1-2-2V8c0-1 1-2 2-2z" fill="#0D2C54"/><path d="M11.5 4.5c0-2.2-1.8-4-4-4s-4 1.8-4 4h8z" stroke="#0D2C54"/></g></svg>
+                    <span id="tab3-description">Security</span>
+                </a>
+                <a class="modal-tabbed__btn" role="tab" aria-selected="false" aria-controls="tab2-content" tabindex="0">
+                    <svg class="modal-tabbed__ico" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 11" style="enable-background:new 0 0 17 11;" width="18" height="15"><g><g><g><g><g><g><path fill='#0D2C54' d="M6 10h11v1H6zM0 10h3v1H0zM6 5h11v1H6zM0 5h3v1H0zM6 0h11v1H6zM0 0h3v1H0z"/></g></g></g></g></g></g></svg>
+                    <span id="tab2-description">Logs</span>
+                </a>
+            </div>
+            
+            <div class="modal-tabbed__tabs-wrap">
+            <ul class="modal-tabbed__tabs scrollbar" role="tablist">
+                <li id="tab1-content" class="modal-tabbed__tab" role="tabpanel" aria-labelledby="tab1-description" aria-hidden="true">
+                    
+                    <section class="general-settings">
+                        <div class="general-settings__columns clearfix">
+                            <div class="general-settings__inputs">
+                                <div class="general-settings__input-wrap">
+                                    <label for="full-name" class="general-settings__label">Full name:</label>
+                                    <div class="general-settings__initials-wrap" data-initials="JG">
+                                        <input type="text" class="general-settings__input general-settings__input--wide" name="full-name" id="full-name" placeholder="John Doe" value="Jan Gemerle" >
+                                    </div>
+                                </div>
+                                <div class="general-settings__input-wrap">
+                                    <label for="email" class="general-settings__label">Email:</label>
+                                    <input type="text" class="general-settings__input general-settings__input--wide" name="email" id="email" placeholder="jan@gemerle.cz" value="jan@gemerle.cz">
+                                    <a href="#" class="general-settings__link">+ Add a secondary email</a>
+                                </div>
+                                <div class="general-settings__input-wrap">
+                                    <label for="job" class="general-settings__label">Your job:</label>
+                                    <input type="text" class="general-settings__input general-settings__input--wide" name="job" id="job" placeholder="For example: designer" value="">
+                                </div>
+                            </div>
+                            <div class="general-settings__notifications">
+                                <a class="avatar" href="#">
+
+                                </a>
+                                <p class="label">Email notifications:</p>
+                                <div class="new-project__settings__wrap">
+
+                                    <input class="visually-hidden new-project__settings__radio" type="radio" name="visibility" value="never" id="never" checked>
+                                    <label class="new-project__settings__label btn" for="never">
+                                        Never
+                                    </label>
+
+                                    <input class="visually-hidden new-project__settings__radio" type="radio" name="visibility" value="daily" id="daily">
+                                    <label class="new-project__settings__label btn" for="daily">
+                                        Daily
+                                    </label>
+
+                                    <input class="visually-hidden new-project__settings__radio" type="radio" name="visibility" value="daily" id="twice-a-week">
+                                    <label class="new-project__settings__label btn" for="twice-a-week">
+                                        Twice a week
+                                    </label>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <a class="btn btn--large btn--dark" href="#">Save</a>
+
+                    </section>
+
+                </li>
+                <li id="tab4-content" class="modal-tabbed__tab" role="tabpanel" aria-labelledby="tab4-description"
+                    aria-hidden="false">
+
+                    <section class="general-settings">
+                        <div class="general-settings__columns clearfix">
+                            <div class="general-settings__inputs">
+                                <div class="general-settings__input-wrap">
+                                    <label for="daily-allocation" class="general-settings__label">My daily project
+                                        allocation:</label>
+                                    <div class="general-settings__initials-wrap" data-initials="hours">
+                                        <input type="number" class="general-settings__input general-settings__input--wide"
+                                               name="daily-allocation" id="daily-allocation" placeholder="8"
+                                               value="8">
+                                    </div>
+                                    <p class="general-settings__notice general-settings__notice--mt">40 hours a week (that’s 100% of your company
+                                        office hours)</p>
+                                </div>
+                            </div>
+                            <div class="general-settings__notifications">
+                                <p class="general-settings__notice">The current weekly hours will be equally divided
+                                    on your current projects in regards to time-tracking.
+                                </p>
+                                <p class="general-settings__text"><strong>Example:</strong><br> With one project and one task, estimated to take
+                                    8 hours, it will take 1 day to complete.
+                                    With two projects with one task on each, estimated to take respectively 8 hours
+                                    each, it will take 2 days to complete</p>
+                            </div>
+                        </div>
+
+                        <a class="btn btn--large btn--dark" href="#">Save</a>
+
+                    </section>
+
+                </li>
+                <li id="tab2-content" class="modal-tabbed__tab" role="tabpanel" aria-labelledby="tab2-description" aria-hidden="true">
+
+
+                    <div class="label label--mb">Set new password:</div>
+                    
+                    <div class="modal-general__input-wrap">                        
+                        <label for="old-password" class="visually-hidden">Current password</label>
+                        <input type="text" name="old-password" class="dark" id="old-password" placeholder="Current password">
+                    </div>
+
+                    <div class="modal-general__input-wrap">                        
+                        <label for="new-password" class="visually-hidden">New password</label>
+                        <input type="text" name="new-password" class="dark" id="new-password" placeholder="New password">
+                    </div>
+
+                    <div class="modal-general__input-wrap">                        
+                        <label for="confirm-password" class="visually-hidden">Confirm new password</label>
+                        <input type="text" name="confirm-password" class="dark" id="confirm-password" placeholder="Confirm new password">
+                    </div>
+
+                    <div class="modal-general__input-wrap">
+                        <a class="btn btn--large btn--dark" href="#">Save</a>                        
+                    </div>
+
+
+                </li>
+                <li id="tab3-content" class="modal-tabbed__tab" role="tabpanel" aria-labelledby="tab3-description" aria-hidden="true">
+                    
+                    logs
+
+                </li>          
+            </ul>
+            </div>
+
+
+        </section>
+    </section>
+
+</div>
+</main>
+
+<script type="text/javascript">
+    var userMenuToggle = document.querySelector('#js_user-menu-toggle');
+    var userMenu = document.querySelector('#js_user-menu');
+    userMenuToggle.addEventListener("click",function(e){
+        userMenu.classList.toggle('header__menu--visible');
+    });
+    var modal = document.querySelector('#js_modal');
+    var modalClose = document.querySelector('#js_modal-close');
+    modalClose.addEventListener("click",function(e){
+        modal.classList.add('modal--hidden');
+    });
+</script>
+</body>
+</html>

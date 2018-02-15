@@ -1,0 +1,63 @@
+.horizontal-radio-btns {
+    $this: &;
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    &__radio:checked {
+        + #{$this}__label {
+            color: $c1;
+            background-image: $gr1;
+            border-color: transparent;
+            #{$this}__icon {
+                stroke: $c1;
+                &--fill {
+                    fill: $c1;
+                }
+            }
+        }
+    }
+    &__radio:focus {
+        + #{$this}__label {
+            outline: auto;
+        }
+    }
+    &__label {
+        text-transform: none;
+        color: $c6;
+        transition: none;
+        border-radius: 0;
+        min-height: 3.8rem;
+        font-size: 1.2rem;
+        padding: 0 1.2rem;
+        &:focus {
+        }
+        &:first-of-type {
+            border-top-left-radius: .3rem;
+            border-bottom-left-radius: .3rem;
+            border-right: none;
+        }
+        &:last-of-type {
+            border-top-right-radius: .3rem;
+            border-bottom-right-radius: .3rem;
+            border-left: none;
+        }
+    }
+
+    &__icon {
+        margin-right: 1rem;
+        fill: none;
+        stroke: $c6;
+        &--fill {
+            fill: $c6;
+        }
+    }
+
+    &__notice {
+        margin-top: 1rem !important;
+        font-style: italic;
+        font-size: 1.3rem;
+        color: $c9;
+    }
+}

@@ -1,0 +1,211 @@
+.dropdown {
+    $this: &;
+    &__outer-wrap {
+        position: relative;
+        &:before {
+            content: '';
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            position: absolute;
+            right: 0;
+            top: calc(50% - .7rem);
+            background-image: url(../img/user-arrow.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform .3s;
+        }
+        &--open {
+            &:before {
+                transform: rotate(180deg);
+            }
+        }
+        &--right {
+            min-width: 25rem;
+            margin-left: auto;
+            display: flex;
+        }
+    }
+    &__list {
+        position: absolute;
+        z-index: 1;
+        background-color: $c6;
+        border-radius: .4rem;
+        box-shadow: $bs1;
+        padding: 2rem 3rem;
+        color: $c1;
+        &--right {
+            right: 0;
+            top: 100%;
+            width: 100%;
+        }
+        &--large-padding {
+            padding: 3rem;
+        }
+        &--assign {
+            right: 0;
+            top: 41px;
+            min-width: 32rem;
+        }
+    }
+    &__item {
+        font-size: 1.4rem;
+    }
+    &__link {
+        padding: .5em 0;
+        display: flex;
+        opacity: .8;
+        transition: opacity .3s;
+        &:hover {
+            opacity: 1;
+        }
+        &--selected {
+            font-weight: 500;
+        }
+        &--centered {
+            align-items: center;
+        }
+    }
+    &__icon-wrap {
+        width: 3.2rem;
+    }
+    &__icon {
+        fill: $c4;
+        &--duplicate {
+            width: 1.8rem;
+            height: 2rem;
+        }
+        &--share {
+            width: 1.7rem;
+            height: 1.8rem;
+        }
+        &--archive {
+            width: 2rem;
+            height: 1.8rem;
+        }
+        &--print {
+            width: 2.1rem;
+            height: 2.1rem;
+        }
+        &--delete {
+            width: 1.6rem;
+            height: 1.9rem;
+        }
+    }
+    &__label,
+    &__input-label {
+        text-align: left;
+    }
+    &__input-label {
+        margin-bottom: 1rem;
+    }
+    &__input {
+        font-weight: 500;
+        text-align: left !important;
+        color: $c1 !important;
+        @include placeholder {
+            text-align: left !important;
+        }
+    }
+    &__labels {
+        &__title {
+            text-align: left;
+            margin-top: 3rem;
+            margin-bottom: 1.5rem;
+        }
+        &__item {
+            display: flex;
+            margin-bottom: 1rem;
+            align-items: center;
+            font-size: 1rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: $c7;
+            letter-spacing: .05em;
+            transition: color .3s;
+            &:hover {
+                color: $c1;
+                #{$this}__labels__delete {
+                    display: block;
+                }
+            }
+            &--picker-active {
+                #{$this}__labels__item-inner {
+                    display: none;
+                }
+                #{$this}__labels__picker {
+                    display: flex !important;
+                }
+            }
+        }
+        &__item-inner {
+            display: flex;
+            align-items: center;
+            width: 100%;
+        }
+        &__color {
+            width: 1.8rem;
+            height: 1.8rem;
+            margin-right: 1rem;
+            border-radius: 50%;
+            border: .1rem solid $c9;
+            &:hover {
+                background-size: 10px;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url(../img/edit.svg);
+            }
+
+            &--label1 {
+                background-color: $c32;
+                border-color: $c32;
+            }
+
+            &--label2 {
+                background-color: $c33;
+                border-color: $c33;
+            }
+
+            &--label3 {
+                background-color: $c34;
+                border-color: $c34;
+            }
+
+            &--label4 {
+                background-color: $c35;
+                border-color: $c35;
+            }
+            &--label5 {
+                background-color: $c36;
+                border-color: $c36;
+            }
+
+            &--label6 {
+                background-color: $c37;
+                border-color: $c37;
+            }
+
+            &--label7 {
+                background-color: $c38;
+                border-color: $c38;
+            }
+        }
+        &__delete {
+            margin-left: auto;
+            display: none;
+        }
+        &__delete-icon {
+            width: 1rem;
+            height: 1.2rem;
+        }
+        &__picker {
+            display: none;
+        }
+    }
+    &__user-img {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 1rem;
+    }
+}

@@ -1,0 +1,163 @@
+.kanban-card {
+    background-color: $c23;
+    border: .1rem solid $c24;
+    border-radius: .3rem;
+
+    &__header {
+        padding: 2rem 1.6rem 0;
+    }
+
+    &__user {
+        width: 2.4rem;
+        min-width: 2.4rem;
+        height: 2.4rem;
+        min-height: 2.4rem;
+        border-radius: 50%;
+        margin-right: 1rem;
+        margin-top: .5rem;
+    }
+
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $c6;
+        margin-bottom: 0;
+
+        &--small {
+            font-size: 1.1rem;
+        }
+    }
+
+    &__subtitle {
+        color: $c6;
+        font-size: 1.2rem;
+    }
+
+    &__header {
+        display: flex;
+    }
+
+    &__toggle {
+        position: relative;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 1.5rem;
+            height: 1.5rem;
+            background-image: url(../img/user-arrow.svg);
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: transform .3s;
+        }
+
+        &--uncollapsed {
+            &:after {
+                transform: rotate(180deg);                
+            }
+        }
+    }
+
+    &__tags {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0 1.6rem .5rem;
+        margin-top: 1.25rem;
+    }
+
+    &__tag {
+        display: flex;
+        transform-origin: top;
+        transition: all .3s;
+        margin-bottom: .6rem;            
+
+        &:not(:last-child) {
+            margin-right: .6rem;
+        }
+
+        &--collapsed {
+            transform: scaleY(0.4);
+            font-size: 0;
+        }
+    }
+
+    &__content {
+        display: none;
+        padding: 1.6rem;
+        margin-top: .5rem;
+        padding-bottom: 0;
+        border-top: .1rem solid $c24;
+        font-size: 1.2rem
+    }
+
+    &__status {
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__text {
+        margin-bottom: 0;
+        color: $c6;
+    }
+
+    &__date,
+    &__comments,
+    &__attachments {
+        display: flex;
+        align-items: center;
+        margin: .5rem 0;
+        &:not(:last-child) {
+            margin-right: 3rem;
+        }
+    }
+
+    &__comments {
+        &__tag {
+            margin-left: .6rem
+        }
+    }
+
+    &__icon {
+        margin-right: .6rem;
+    }
+
+    &__status-bar {
+        padding: .4rem 0;
+        font-size: 1.2rem;
+        color: $c1;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform-origin: bottom;
+        border-bottom-right-radius: .3rem;
+        border-bottom-left-radius: .3rem;
+        transition: all .3s;
+
+        &--collapsed {
+            transform: scaleY(0.5);
+            font-size: 0;
+        }
+
+        &--ok {
+            background-color: $c18;
+        }
+
+        &--warning {
+            background-color: $c25;
+        }
+
+        &--error {
+            background-color: $c15;
+        }
+
+    }
+}
