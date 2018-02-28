@@ -350,7 +350,21 @@ strong {
   display: flex;
 }
 
+
+
 .attachments{
+
+  position: relative;
+  z-index: 99;
+
+  .attachments__item.attachments__item--add{
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 9999;
+  }
 
   .attachments__item{
     padding: 0 1.5rem;
@@ -358,11 +372,13 @@ strong {
     .attachments__img:hover{
       cursor: pointer;
       .img__holder{
-        .pdf__1{
-          display: none;
-        }
-        .hover{
-          display: flex;
+        >a{
+          .pdf__1{
+            display: none;
+          }
+          .hover{
+            display: flex;
+          }
         }
       }
     }
@@ -379,27 +395,37 @@ strong {
         overflow: hidden;
         position: relative;
 
-        img{
+        >a{
+
+          display: block;
           width: 100%;
           height: 100%;
+          position: relative;
+
+          img{
+            width: 100%;
+            height: 100%;
+          }
+
+          >.pdf__1{
+            position: absolute;
+            top: 0;
+            color: $c4;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding-top: 3px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            z-index: 9;
+          }
+
         }
 
-        >.pdf__1{
-          position: absolute;
-          top: 0;
-          color: $c4;
-          font-size: 10px;
-          font-weight: bold;
-          letter-spacing: 1px;
-          padding-top: 3px;
-          left: 0;
-          width: 100%;
-          display: flex;
-          height: 100%;
-          align-items: center;
-          justify-content: center;
-          z-index: 9;
-        }
 
         .hover{
           position: absolute;
@@ -453,7 +479,60 @@ strong {
 
 }
 
+.header__user{
+  .header__user__search{
+    svg{
+      margin-right: 20px;
+      margin-top: 6px;
+    }
+  }
+}
 
+.kanban-card__tag{
+  max-width: 100%;
+}
+
+.header__toggle{
+
+  ul{
+    display: flex;
+
+    li.active>a{
+      svg{
+        g{
+        fill:#fff;
+        }
+      }
+      border-color:#06408E ;
+      background: $gr1;
+      color: #fff;
+    }
+    li:first-child>a{
+      border-top-right-radius:0px;
+      border-bottom-right-radius:0px;
+      border-right: 0px;
+    }
+    li:last-child>a{
+      border-top-left-radius:0px;
+      border-bottom-left-radius:0px;
+    }
+    li{
+      a{
+        border-radius:3px;
+        border: 1px solid #B6CDCD;
+        display: block;
+        text-decoration:none;
+        font-size: 14px;
+        padding: 8px 17px 5px;
+
+        svg{
+          margin: 0px 5px 0 0;
+        }
+      }
+    }
+  }
+
+}
 
 //Custom Code
 
