@@ -682,65 +682,112 @@ strong {
 #tab1-content {
   display: flex; }
 
-.attachments .attachments__item {
-  padding: 0 1.5rem; }
-  .attachments .attachments__item .attachments__img:hover {
-    cursor: pointer; }
-    .attachments .attachments__item .attachments__img:hover .img__holder .pdf__1 {
-      display: none; }
-    .attachments .attachments__item .attachments__img:hover .img__holder .hover {
-      display: flex; }
-  .attachments .attachments__item .attachments__img {
-    margin-right: 10px; }
-    .attachments .attachments__item .attachments__img > .img__holder {
-      width: 50px;
-      display: block;
-      border-radius: 3px;
-      height: 56px;
-      overflow: hidden;
-      position: relative; }
-      .attachments .attachments__item .attachments__img > .img__holder img {
-        width: 100%;
-        height: 100%; }
-      .attachments .attachments__item .attachments__img > .img__holder > .pdf__1 {
-        position: absolute;
-        top: 0;
-        color: #B6CCCC;
-        font-size: 10px;
-        font-weight: bold;
-        letter-spacing: 1px;
-        padding-top: 3px;
-        left: 0;
-        width: 100%;
-        display: flex;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        z-index: 9; }
-      .attachments .attachments__item .attachments__img > .img__holder .hover {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        display: none;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        z-index: 99; }
-        .attachments .attachments__item .attachments__img > .img__holder .hover img {
-          width: 20px; }
-  .attachments .attachments__item .attachments__btns {
-    justify-content: center;
-    align-items: center; }
-    .attachments .attachments__item .attachments__btns > a:not(:last-child):hover {
-      fill: #1EC4ED; }
-    .attachments .attachments__item .attachments__btns > a {
-      margin-left: 15px; }
-    .attachments .attachments__item .attachments__btns .attachments__btn-ico--hamburger:hover img {
-      fil-color: #0D2C54; }
-    .attachments .attachments__item .attachments__btns .attachments__btn-ico--hamburger img {
-      width: 4px;
-      height: 16px; }
+.attachments {
+  position: relative;
+  z-index: 99; }
+  .attachments .attachments__item.attachments__item--add {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: 9999; }
+  .attachments .attachments__item {
+    padding: 0 1.5rem; }
+    .attachments .attachments__item .attachments__img:hover {
+      cursor: pointer; }
+      .attachments .attachments__item .attachments__img:hover .img__holder > a .pdf__1 {
+        display: none; }
+      .attachments .attachments__item .attachments__img:hover .img__holder > a .hover {
+        display: flex; }
+    .attachments .attachments__item .attachments__img {
+      margin-right: 10px; }
+      .attachments .attachments__item .attachments__img > .img__holder {
+        width: 50px;
+        display: block;
+        border-radius: 3px;
+        height: 56px;
+        overflow: hidden;
+        position: relative; }
+        .attachments .attachments__item .attachments__img > .img__holder > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: relative; }
+          .attachments .attachments__item .attachments__img > .img__holder > a img {
+            width: 100%;
+            height: 100%; }
+          .attachments .attachments__item .attachments__img > .img__holder > a > .pdf__1 {
+            position: absolute;
+            top: 0;
+            color: #B6CCCC;
+            font-size: 10px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            padding-top: 3px;
+            left: 0;
+            width: 100%;
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+            z-index: 9; }
+        .attachments .attachments__item .attachments__img > .img__holder .hover {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          display: none;
+          height: 100%;
+          align-items: center;
+          justify-content: center;
+          z-index: 99; }
+          .attachments .attachments__item .attachments__img > .img__holder .hover img {
+            width: 20px; }
+    .attachments .attachments__item .attachments__btns {
+      justify-content: center;
+      align-items: center; }
+      .attachments .attachments__item .attachments__btns > a:not(:last-child):hover {
+        fill: #1EC4ED; }
+      .attachments .attachments__item .attachments__btns > a {
+        margin-left: 15px; }
+      .attachments .attachments__item .attachments__btns .attachments__btn-ico--hamburger:hover img {
+        fil-color: #0D2C54; }
+      .attachments .attachments__item .attachments__btns .attachments__btn-ico--hamburger img {
+        width: 4px;
+        height: 16px; }
+
+.header__user .header__user__search svg {
+  margin-right: 20px;
+  margin-top: 6px; }
+
+.kanban-card__tag {
+  max-width: 100%; }
+
+.header__toggle ul {
+  display: flex; }
+  .header__toggle ul li.active > a {
+    border-color: #06408E;
+    background: linear-gradient(-225deg, #06408E 0%, #1C78BF 100%);
+    color: #fff; }
+    .header__toggle ul li.active > a svg g {
+      fill: #fff; }
+  .header__toggle ul li:first-child > a {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-right: 0px; }
+  .header__toggle ul li:last-child > a {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px; }
+  .header__toggle ul li a {
+    border-radius: 3px;
+    border: 1px solid #B6CDCD;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+    padding: 8px 17px 5px; }
+    .header__toggle ul li a svg {
+      margin: 0px 5px 0 0; }
 
 @keyframes rotate {
   100% {
