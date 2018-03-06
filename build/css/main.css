@@ -437,7 +437,7 @@ body {
 .container {
   padding: 0 1.5rem;
   max-width: 134rem;
-  max-width: calc( 134rem + 4rem );
+  max-width: calc(134rem + 4rem);
   margin: auto; }
 
 h1,
@@ -617,7 +617,7 @@ strong {
   transform-origin: center center; }
 
 .loader-path {
-  stroke-dasharray: 150,200;
+  stroke-dasharray: 150, 200;
   stroke-dashoffset: -10;
   animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
   stroke-linecap: round; }
@@ -746,8 +746,24 @@ strong {
             width: 20px; }
     .attachments .attachments__item .attachments__btns {
       justify-content: center;
-      align-items: center; }
-      .attachments .attachments__item .attachments__btns > a:not(:last-child):hover {
+      align-items: center;
+      display: flex;
+      position: relative; }
+      .attachments .attachments__item .attachments__btns > .hidden__btn {
+        display: flex;
+        position: absolute;
+        top: -1px;
+        left: 2px;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transition: all 0.25s ease-in-out;
+        -moz-transition: all 0.25s ease-in-out;
+        -ms-transition: all 0.25s ease-in-out;
+        -o-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out; }
+        .attachments .attachments__item .attachments__btns > .hidden__btn > a:last-child {
+          margin-left: 15px; }
+      .attachments .attachments__item .attachments__btns > .hidden__btn > a:hover {
         fill: #1EC4ED; }
       .attachments .attachments__item .attachments__btns > a {
         margin-left: 15px; }
@@ -756,6 +772,10 @@ strong {
       .attachments .attachments__item .attachments__btns .attachments__btn-ico--hamburger img {
         width: 4px;
         height: 16px; }
+    .attachments .attachments__item .attachments__btns:hover > .hidden__btn {
+      left: -48px;
+      opacity: 1;
+      visibility: visible; }
 
 .header__user .header__user__search svg {
   margin-right: 20px;
@@ -789,19 +809,35 @@ strong {
     .header__toggle ul li a svg {
       margin: 0px 5px 0 0; }
 
+.edit-task__header__title-wrap .edit-task__header__title {
+  height: 40px;
+  display: flex;
+  align-items: center; }
+.edit-task__header__title-wrap > .editableTitle {
+  background: #fff !important;
+  border-radius: 3px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: left !important;
+  color: #212121 !important;
+  margin-left: 15px;
+  padding: 0 10px !important;
+  min-width: 210px; }
+
 @keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 @keyframes dash {
   0% {
-    stroke-dasharray: 1,200;
+    stroke-dasharray: 1, 200;
     stroke-dashoffset: 0; }
   50% {
-    stroke-dasharray: 89,200;
+    stroke-dasharray: 89, 200;
     stroke-dashoffset: -35; }
   100% {
-    stroke-dasharray: 89,200;
+    stroke-dasharray: 89, 200;
     stroke-dashoffset: -124; } }
 @keyframes color {
   0% {
@@ -816,7 +852,7 @@ strong {
   .container {
     padding: 0 4%;
     max-width: 134rem;
-    max-width: calc( 134rem + 8% );
+    max-width: calc(134rem + 8%);
     margin: auto; } }
 .header {
   color: #0D2C54;
